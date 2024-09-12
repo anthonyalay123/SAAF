@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c88765d4a9984e4ab205d40e86735d21" Name="Diagram1" ZoomLevel="10" ShowGrid="true">
+        <EntityTypeShape EntityType="SAAFModel.AFILITEMACTIVOFIJOHISTORICO" Width="1.5" PointX="37.75" PointY="44.75" />
+        <EntityTypeShape EntityType="SAAFModel.AFIPITEMACTIVOFIJO" Width="1.5" PointX="39.75" PointY="44.75" />
+        <EntityTypeShape EntityType="SAAFModel.AFIPITEMACTIVOFIJOHISTORICO" Width="1.5" PointX="27.75" PointY="45.75" />
+        <EntityTypeShape EntityType="SAAFModel.AFIPTIPOACTIVOFIJO" Width="1.5" PointX="10.75" PointY="27.75" />
+        <EntityTypeShape EntityType="SAAFModel.AFITACTIVOFIJO" Width="1.5" PointX="12.75" PointY="27.75" />
+        <EntityTypeShape EntityType="SAAFModel.COBPCLIENTECOMISION" Width="1.5" PointX="47.75" PointY="45.375" />
+        <EntityTypeShape EntityType="SAAFModel.COBPCLIENTECOMISIONDETALLE" Width="1.5" PointX="50" PointY="45" />
+        <EntityTypeShape EntityType="SAAFModel.COBPCLIENTEPAGOASEGURADORA" Width="1.5" PointX="24.75" PointY="20.75" />
+        <EntityTypeShape EntityType="SAAFModel.COBPCOMISIONES" Width="1.5" PointX="5.75" PointY="36.75" />
+        <EntityTypeShape EntityType="SAAFModel.COBPDIANOLABORABLE" Width="1.5" PointX="47.75" PointY="40.125" />
+        <EntityTypeShape EntityType="SAAFModel.COBPDIANOLABORABLEZONA" Width="1.5" PointX="50" PointY="40" />
+        <EntityTypeShape EntityType="SAAFModel.COBPDIASNOLABORABLES" Width="1.5" PointX="29.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SAAFModel.COBPEMPLEADOCODIGOCOMISION" Width="1.5" PointX="31.75" PointY="13.75" />
+        <EntityTypeShape EntityType="SAAFModel.COBPEMPLEADOZONASAP" Width="1.5" PointX="7.75" PointY="36.75" />
+        <EntityTypeShape EntityType="SAAFModel.COBPFACTURACOMISION" Width="1.5" PointX="47.75" PointY="23.25" />
+        <EntityTypeShape EntityType="SAAFModel.COBPFACTURACOMISIONDETALLE" Width="1.5" PointX="50" PointY="23" />
+        <EntityTypeShape EntityType="SAAFModel.COBPNOAPLICAFACTURACOMISION" Width="1.5" PointX="44.75" PointY="22.75" />
+        <EntityTypeShape EntityType="SAAFModel.COBPNOAPLICANUMDOCPAGOCOMISION" Width="1.5" PointX="29.75" PointY="45.75" />
+        <EntityTypeShape EntityType="SAAFModel.COBPPARAMETRO" Width="1.5" PointX="5.75" PointY="47.75" />
+        <EntityTypeShape EntityType="SAAFModel.COBPTOLERANCIACONTADO" Width="1.5" PointX="7.75" PointY="47.75" />
+        <EntityTypeShape EntityType="SAAFModel.COBPVENDEDOR" Width="1.5" PointX="47.75" PointY="27.75" />
+        <EntityTypeShape EntityType="SAAFModel.COBPZONADIASDOCUMENTO" Width="1.5" PointX="47.75" PointY="13.125" />
+        <EntityTypeShape EntityType="SAAFModel.COBPZONADIASDOCUMENTODETALLE" Width="1.5" PointX="50" PointY="13" />
+        <EntityTypeShape EntityType="SAAFModel.COBTCOMISIONES" Width="1.5" PointX="27.75" PointY="31.5" />
+        <EntityTypeShape EntityType="SAAFModel.COBTCOMISIONESDETALLE" Width="1.5" PointX="30" PointY="27.75" />
+        <EntityTypeShape EntityType="SAAFModel.COBTCOMISIONESEMPLEADO" Width="1.5" PointX="44.75" PointY="47.75" />
+        <EntityTypeShape EntityType="SAAFModel.COBTCOMISIONESEXCEPCIONDIASDOC" Width="1.5" PointX="30" PointY="22.875" />
+        <EntityTypeShape EntityType="SAAFModel.COBTCOMISIONESEXCEPCIONES" Width="1.5" PointX="30" PointY="39.875" />
+        <EntityTypeShape EntityType="SAAFModel.COMMPROVEEDORES" Width="1.5" PointX="47.75" PointY="7.125" />
+        <EntityTypeShape EntityType="SAAFModel.COMMPROVEEDORESCUENTABANC" Width="1.5" PointX="50" PointY="7" />
+        <EntityTypeShape EntityType="SAAFModel.COMPGRUPOPAGOS" Width="1.5" PointX="49.75" PointY="17.75" />
+        <EntityTypeShape EntityType="SAAFModel.COMPPARAMETRO" Width="1.5" PointX="49.75" PointY="27.75" />
+        <EntityTypeShape EntityType="SAAFModel.COMPTIPOITEMS" Width="1.5" PointX="49.75" PointY="32.75" />
+        <EntityTypeShape EntityType="SAAFModel.COMTCOTIZACION" Width="1.5" PointX="24.75" PointY="9" />
+        <EntityTypeShape EntityType="SAAFModel.COMTCOTIZACIONGANADORA" Width="1.5" PointX="27" PointY="5.875" />
+        <EntityTypeShape EntityType="SAAFModel.COMTCOTIZACIONPROVEEDOR" Width="1.5" PointX="27" PointY="12.875" />
+        <EntityTypeShape EntityType="SAAFModel.COMTCOTIZACIONPROVEEDORADJUNTO" Width="1.5" PointX="29.25" PointY="17.125" />
+        <EntityTypeShape EntityType="SAAFModel.COMTCOTIZACIONPROVEEDORDETALLE" Width="1.5" PointX="29.25" PointY="11.5" />
+        <EntityTypeShape EntityType="SAAFModel.COMTCOTIZACIONSOLICITUDCOMPRA" Width="1.5" PointX="27" PointY="1.75" />
+        <EntityTypeShape EntityType="SAAFModel.COMTFACTURAPAGO" Width="1.5" PointX="41.75" PointY="49.75" />
+        <EntityTypeShape EntityType="SAAFModel.COMTORDENCOMPRA" Width="1.5" PointX="37.75" PointY="31.5" />
+        <EntityTypeShape EntityType="SAAFModel.COMTORDENCOMPRACOTIZACION" Width="1.5" PointX="40" PointY="28.25" />
+        <EntityTypeShape EntityType="SAAFModel.COMTORDENCOMPRAPROVEEDOR" Width="1.5" PointX="40" PointY="32.25" />
+        <EntityTypeShape EntityType="SAAFModel.COMTORDENCOMPRAPROVEEDORITEM" Width="1.5" PointX="42.25" PointY="32.875" />
+        <EntityTypeShape EntityType="SAAFModel.COMTORDENPAGO" Width="1.5" PointX="37.75" PointY="19" />
+        <EntityTypeShape EntityType="SAAFModel.COMTORDENPAGOADJUNTO" Width="1.5" PointX="40" PointY="16.375" />
+        <EntityTypeShape EntityType="SAAFModel.COMTORDENPAGOFACTOCP" Width="1.5" PointX="42.25" PointY="22.125" />
+        <EntityTypeShape EntityType="SAAFModel.COMTORDENPAGOFACTURA" Width="1.5" PointX="40" PointY="20.625" />
+        <EntityTypeShape EntityType="SAAFModel.COMTSEMANAPAGOS" Width="1.5" PointX="46.75" PointY="49.75" />
+        <EntityTypeShape EntityType="SAAFModel.COMTSOLICITUDCOMPRA" Width="1.5" PointX="37.75" PointY="8.375" />
+        <EntityTypeShape EntityType="SAAFModel.COMTSOLICITUDCOMPRAADJUNTO" Width="1.5" PointX="40" PointY="6.25" />
+        <EntityTypeShape EntityType="SAAFModel.COMTSOLICITUDCOMPRADETALLE" Width="1.5" PointX="40" PointY="10.5" />
+        <EntityTypeShape EntityType="SAAFModel.CRELCHECKLIST" Width="1.5" PointX="48.75" PointY="49.75" />
+        <EntityTypeShape EntityType="SAAFModel.CREMCHECKLIST" Width="1.5" PointX="29.75" PointY="50.75" />
+        <EntityTypeShape EntityType="SAAFModel.CREPCHECKLIST" Width="1.5" PointX="31.75" PointY="50.75" />
+        <EntityTypeShape EntityType="SAAFModel.CRETINFORMERTC" Width="1.5" PointX="10.75" PointY="5.75" />
+        <EntityTypeShape EntityType="SAAFModel.CRETINFORMERTCCLIENTES" Width="1.5" PointX="13" PointY="14.625" />
+        <EntityTypeShape EntityType="SAAFModel.CRETINFORMERTCCROQUIS" Width="1.5" PointX="13" PointY="22.375" />
+        <EntityTypeShape EntityType="SAAFModel.CRETINFORMERTCCULTIVOS" Width="1.5" PointX="13" PointY="18.5" />
+        <EntityTypeShape EntityType="SAAFModel.CRETINFORMERTCDOCUMENTOSPENDIENTES" Width="1.5" PointX="13" PointY="6.125" />
+        <EntityTypeShape EntityType="SAAFModel.CRETINFORMERTCPROVEEDOR" Width="1.5" PointX="13" PointY="10.625" />
+        <EntityTypeShape EntityType="SAAFModel.CRETPLANTILLASEGURO" Width="1.5" PointX="33.75" PointY="50.75" />
+        <EntityTypeShape EntityType="SAAFModel.CRETPROCESOCREDITOACCIONISTA" Width="1.5" PointX="8" PointY="32.125" />
+        <EntityTypeShape EntityType="SAAFModel.CRETPROCESOCREDITOADMACTUAL" Width="1.5" PointX="8" PointY="22.25" />
+        <EntityTypeShape EntityType="SAAFModel.CRETPROCESOCREDITOBURO" Width="1.5" PointX="8" PointY="7.125" />
+        <EntityTypeShape EntityType="SAAFModel.CRETPROCESOCREDITODETALLE" Width="1.5" PointX="8" PointY="13.125" />
+        <EntityTypeShape EntityType="SAAFModel.CRETPROCESOCREDITOFUNCIONJUDICIAL" Width="1.5" PointX="8" PointY="27.25" />
+        <EntityTypeShape EntityType="SAAFModel.CRETPROCESOCREDITOREVISION" Width="1.5" PointX="8" PointY="18.375" />
+        <EntityTypeShape EntityType="SAAFModel.CRETPROCESOCREDITOSRI" Width="1.5" PointX="8" PointY="2.5" />
+        <EntityTypeShape EntityType="SAAFModel.CRETSOLICITUDCREDITO" Width="1.5" PointX="0.75" PointY="9.75" />
+        <EntityTypeShape EntityType="SAAFModel.CRETSOLICITUDCREDITODIRECCION" Width="1.5" PointX="3" PointY="7.625" />
+        <EntityTypeShape EntityType="SAAFModel.CRETSOLICITUDCREDITONOMBRAMIENTO" Width="1.5" PointX="3" PointY="16.875" />
+        <EntityTypeShape EntityType="SAAFModel.CRETSOLICITUDCREDITOOTROSACTIVOS" Width="1.5" PointX="3" PointY="33" />
+        <EntityTypeShape EntityType="SAAFModel.CRETSOLICITUDCREDITOPROPIEDADES" Width="1.5" PointX="3" PointY="2.625" />
+        <EntityTypeShape EntityType="SAAFModel.CRETSOLICITUDCREDITOREFPERSONAL" Width="1.5" PointX="3" PointY="11.625" />
+        <EntityTypeShape EntityType="SAAFModel.CRMPCATEGORIA" Width="1.5" PointX="50.75" PointY="49.75" />
+        <EntityTypeShape EntityType="SAAFModel.GENLAUDITORIA" Width="1.5" PointX="7.75" PointY="51.75" />
+        <EntityTypeShape EntityType="SAAFModel.GENLCOSTOPRODUCTO" Width="1.5" PointX="51.75" PointY="17.75" />
+        <EntityTypeShape EntityType="SAAFModel.GENLENVIOCORREO" Width="1.5" PointX="51.75" PointY="27.75" />
+        <EntityTypeShape EntityType="SAAFModel.GENLENVIOSMS" Width="1.5" PointX="51.75" PointY="31.75" />
+        <EntityTypeShape EntityType="SAAFModel.GENLPERSONA" Width="1.5" PointX="35.75" PointY="51.75" />
+        <EntityTypeShape EntityType="SAAFModel.GENLPERSONAHISTORIAL" Width="1.5" PointX="52.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SAAFModel.GENMCATALOGO" Width="1.5" PointX="0.75" PointY="52.75" />
+        <EntityTypeShape EntityType="SAAFModel.GENMCATALOGODEPARTAMENTO" Width="1.5" PointX="2.75" PointY="52.75" />
+        <EntityTypeShape EntityType="SAAFModel.GENMCENTROCOSTO" Width="1.5" PointX="4.75" PointY="52.75" />
+        <EntityTypeShape EntityType="SAAFModel.GENMDEPARTAMENTO" Width="1.5" PointX="52.75" PointY="8.75" />
+        <EntityTypeShape EntityType="SAAFModel.GENMESTADO" Width="1.5" PointX="9.75" PointY="52.75" />
+        <EntityTypeShape EntityType="SAAFModel.GENMESTADOCIVIL" Width="1.5" PointX="11.75" PointY="52.75" />
+        <EntityTypeShape EntityType="SAAFModel.GENMFERIADO" Width="1.5" PointX="52.75" PointY="12.75" />
+        <EntityTypeShape EntityType="SAAFModel.GENMFORMAPAGO" Width="1.5" PointX="13.75" PointY="52.75" />
+        <EntityTypeShape EntityType="SAAFModel.GENMGENERO" Width="1.5" PointX="15.75" PointY="52.75" />
+        <EntityTypeShape EntityType="SAAFModel.GENMNACIONALIDAD" Width="1.5" PointX="17.75" PointY="52.75" />
+        <EntityTypeShape EntityType="SAAFModel.GENMPERSONA" Width="1.5" PointX="15.75" PointY="21.625" />
+        <EntityTypeShape EntityType="SAAFModel.GENMPERSONACAPACITACION" Width="1.5" PointX="18" PointY="47.375" />
+        <EntityTypeShape EntityType="SAAFModel.GENMPERSONADIRECCION" Width="1.5" PointX="18" PointY="3.25" />
+        <EntityTypeShape EntityType="SAAFModel.GENMPERSONAEDUCACION" Width="1.5" PointX="18" PointY="8.875" />
+        <EntityTypeShape EntityType="SAAFModel.GENMPERSONAFICHAMEDICA" Width="1.5" PointX="18" PointY="39" />
+        <EntityTypeShape EntityType="SAAFModel.GENMPERSONAFICHAMEDICAADJUNTO" Width="1.5" PointX="20.25" PointY="41" />
+        <EntityTypeShape EntityType="SAAFModel.GENMTIPOCUENTABANCARIA" Width="1.5" PointX="52.75" PointY="22.75" />
+        <EntityTypeShape EntityType="SAAFModel.GENMTIPOIDENTIFICACION" Width="1.5" PointX="52.75" PointY="36.75" />
+        <EntityTypeShape EntityType="SAAFModel.GENPACCION" Width="1.5" PointX="52.75" PointY="40.75" />
+        <EntityTypeShape EntityType="SAAFModel.GENPCANTON" Width="1.5" PointX="41.25" PointY="1" />
+        <EntityTypeShape EntityType="SAAFModel.GENPENVIOCORREO" Width="1.5" PointX="52.75" PointY="45.75" />
+        <EntityTypeShape EntityType="SAAFModel.GENPGESTORCONSULTAPERFIL" Width="1.5" PointX="52.75" PointY="50.75" />
+        <EntityTypeShape EntityType="SAAFModel.GENPMENU" Width="1.5" PointX="53.75" PointY="16.75" />
+        <EntityTypeShape EntityType="SAAFModel.GENPMENUACCION" Width="1.5" PointX="53.75" PointY="26.75" />
+        <EntityTypeShape EntityType="SAAFModel.GENPMENUACCIONPERFIL" Width="1.5" PointX="53.75" PointY="30.75" />
+        <EntityTypeShape EntityType="SAAFModel.GENPMENUPERFIL" Width="1.5" PointX="37.75" PointY="53.75" />
+        <EntityTypeShape EntityType="SAAFModel.GENPPAIS" Width="1.5" PointX="36.75" PointY="1.125" />
+        <EntityTypeShape EntityType="SAAFModel.GENPPARAMETRO" Width="1.5" PointX="54.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SAAFModel.GENPPARROQUIA" Width="1.5" PointX="43.5" PointY="1.125" />
+        <EntityTypeShape EntityType="SAAFModel.GENPPERFIL" Width="1.5" PointX="0.75" PointY="48" />
+        <EntityTypeShape EntityType="SAAFModel.GENPPERFILFLUJO" Width="1.5" PointX="3" PointY="48" />
+        <EntityTypeShape EntityType="SAAFModel.GENPPROVINCIA" Width="1.5" PointX="39" PointY="1" />
+        <EntityTypeShape EntityType="SAAFModel.GENPRUBROCENTROCOSTOCC" Width="1.5" PointX="54.75" PointY="21.75" />
+        <EntityTypeShape EntityType="SAAFModel.GENPSECUENCIA" Width="1.5" PointX="25.75" PointY="54.75" />
+        <EntityTypeShape EntityType="SAAFModel.GENPTIPOBSCENTROCOSTOCC" Width="1.5" PointX="27.75" PointY="54.75" />
+        <EntityTypeShape EntityType="SAAFModel.GENPTRANSACCION" Width="1.5" PointX="54.75" PointY="34.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHLASISTENCIADETALLE" Width="1.5" PointX="54.75" PointY="38.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHLDECIMOCUARTO" Width="1.5" PointX="54.75" PointY="46.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHLDECIMOTERCERO" Width="1.5" PointX="50.75" PointY="54.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHLEMPLEADO" Width="1.5" PointX="52.75" PointY="54.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHLEMPLEADOCONTRATO" Width="1.5" PointX="54.75" PointY="53.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHLIMPUESTORENTA" Width="1.5" PointX="6.75" PointY="55.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHLNOMINAPAGO" Width="1.5" PointX="47.75" PointY="1.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHLNOMINAPAGODETALLE" Width="1.5" PointX="50" PointY="1" />
+        <EntityTypeShape EntityType="SAAFModel.REHLRDEP" Width="1.5" PointX="19.75" PointY="55.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHLVACACION" Width="1.5" PointX="55.75" PointY="15.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHLVACACIONEMPLEADO" Width="1.5" PointX="21.75" PointY="55.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHLVACACIONHISTORIAL" Width="1.5" PointX="29.75" PointY="55.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHMCARGOLABORAL" Width="1.5" PointX="55.75" PointY="26.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHMGESTORCONSULTA" Width="1.5" PointX="10.75" PointY="47" />
+        <EntityTypeShape EntityType="SAAFModel.REHMGESTORCONSULTADETALLE" Width="1.5" PointX="13" PointY="47" />
+        <EntityTypeShape EntityType="SAAFModel.REHMTIPOCOMISION" Width="1.5" PointX="46.75" PointY="55.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHMTIPOCONTRATO" Width="1.5" PointX="56.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHMTIPOROL" Width="1.5" PointX="2.75" PointY="56.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHMTIPORUBRO" Width="1.5" PointX="55.75" PointY="30.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHPDESCUENTODISCAPACITADOIR" Width="1.5" PointX="56.75" PointY="6.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHPEMPLEADO" Width="1.5" PointX="18" PointY="22.625" />
+        <EntityTypeShape EntityType="SAAFModel.REHPEMPLEADOCARGAFAMILIAR" Width="1.5" PointX="20.25" PointY="28.125" />
+        <EntityTypeShape EntityType="SAAFModel.REHPEMPLEADOCONTACTO" Width="1.5" PointX="20.25" PointY="33.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHPEMPLEADOCONTRATO" Width="1.5" PointX="20.25" PointY="13.25" />
+        <EntityTypeShape EntityType="SAAFModel.REHPEMPLEADOCONTRATOCUENTABANC" Width="1.5" PointX="22.5" PointY="14.375" />
+        <EntityTypeShape EntityType="SAAFModel.REHPEMPLEADOCONTRATOMAXPORCCOMISION" Width="1.5" PointX="22.5" PointY="19.125" />
+        <EntityTypeShape EntityType="SAAFModel.REHPEMPLEADODOCUMENTO" Width="1.5" PointX="20.25" PointY="23.875" />
+        <EntityTypeShape EntityType="SAAFModel.REHPGRUPOCOMISION" Width="1.5" PointX="8.75" PointY="56.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHPIMPUESTORENTA" Width="1.5" PointX="10.75" PointY="56.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHPIMPUESTORENTACREDTRIB" Width="1.5" PointX="12.75" PointY="56.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHPMOTIVOFINCONTRATO" Width="1.5" PointX="14.75" PointY="56.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHPMOVIMIENTOTIPOROLRUBRO" Width="1.5" PointX="56.75" PointY="11.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHPMOVIMIENTOTIPOROLRUBROEMPLEADO" Width="1.5" PointX="16.75" PointY="56.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHPPERIODO" Width="1.5" PointX="56.75" PointY="21.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHPPERMISO" Width="1.5" PointX="56.75" PointY="34.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHPPERMISOHORAS" Width="1.5" PointX="56.75" PointY="39.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHPRUBRO" Width="1.5" PointX="56.75" PointY="45.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHPRUBROFIJO" Width="1.5" PointX="56.75" PointY="51.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHPRUBROTIPOROL" Width="1.5" PointX="56.75" PointY="56.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHPSECUENCIAPAGO" Width="1.5" PointX="57.75" PointY="15.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHPTIPOCOMISIONPERMISO" Width="1.5" PointX="57.75" PointY="26.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHPTIPOPERMISO" Width="1.5" PointX="37.75" PointY="57.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHTAJUSTEPROVISION" Width="1.5" PointX="58.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHTALIMENTACION" Width="1.5" PointX="32.75" PointY="45.375" />
+        <EntityTypeShape EntityType="SAAFModel.REHTALIMENTACIONDETALLE" Width="1.5" PointX="35" PointY="45" />
+        <EntityTypeShape EntityType="SAAFModel.REHTASISTENCIA" Width="1.5" PointX="44.75" PointY="33.875" />
+        <EntityTypeShape EntityType="SAAFModel.REHTASISTENCIADETALLE" Width="1.5" PointX="47" PointY="32.125" />
+        <EntityTypeShape EntityType="SAAFModel.REHTBENEFICIOSOCIALAJUSTE" Width="1.5" PointX="58.75" PointY="5.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHTBENEFICIOSOCIALDETALLE" Width="1.5" PointX="58.75" PointY="19.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHTCOMISION" Width="1.5" PointX="22.75" PointY="45" />
+        <EntityTypeShape EntityType="SAAFModel.REHTCOMISIONDETALLE" Width="1.5" PointX="25" PointY="45.25" />
+        <EntityTypeShape EntityType="SAAFModel.REHTFONDORESERVA" Width="1.5" PointX="44.75" PointY="18.25" />
+        <EntityTypeShape EntityType="SAAFModel.REHTFONDORESERVADETALLE" Width="1.5" PointX="47" PointY="18" />
+        <EntityTypeShape EntityType="SAAFModel.REHTHORASEXTRAS" Width="1.5" PointX="58.75" PointY="30.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHTIMPUESTORENTA" Width="1.5" PointX="58.75" PointY="10.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHTIMPUESTORENTADEDUCIBLE" Width="1.5" PointX="31.75" PointY="58.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHTLIQUIDACION" Width="1.5" PointX="22.75" PointY="30.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHTLIQUIDACIONDETALLEBS" Width="1.5" PointX="25" PointY="24.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHTLIQUIDACIONDETALLEROL" Width="1.5" PointX="25" PointY="40.125" />
+        <EntityTypeShape EntityType="SAAFModel.REHTLIQUIDACIONDETALLEVAC" Width="1.5" PointX="25" PointY="29.875" />
+        <EntityTypeShape EntityType="SAAFModel.REHTLIQUIDACIONRESUMEN" Width="1.5" PointX="25" PointY="34.625" />
+        <EntityTypeShape EntityType="SAAFModel.REHTLIQUIDACIONROLCOMISIONES" Width="1.5" PointX="58.75" PointY="37.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHTLIQUIDACIONRUBROMANUAL" Width="1.5" PointX="58.75" PointY="42.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHTMOVIMIENTO" Width="1.5" PointX="58.75" PointY="47.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHTNOMINA" Width="1.5" PointX="10.75" PointY="38" />
+        <EntityTypeShape EntityType="SAAFModel.REHTNOMINACONSOLIDADO" Width="1.5" PointX="58.75" PointY="53.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHTNOMINADETALLE" Width="1.5" PointX="13" PointY="41.375" />
+        <EntityTypeShape EntityType="SAAFModel.REHTNOMINAEMPLEADO" Width="1.5" PointX="13" PointY="34.375" />
+        <EntityTypeShape EntityType="SAAFModel.REHTNOVEDAD" Width="1.5" PointX="42.75" PointY="27.25" />
+        <EntityTypeShape EntityType="SAAFModel.REHTNOVEDADDETALLE" Width="1.5" PointX="45" PointY="27" />
+        <EntityTypeShape EntityType="SAAFModel.REHTPERMISOS" Width="1.5" PointX="58.75" PointY="58.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHTPRESTAMOINTERNO" Width="1.5" PointX="42.75" PointY="11.125" />
+        <EntityTypeShape EntityType="SAAFModel.REHTPRESTAMOINTERNODETALLE" Width="1.5" PointX="45" PointY="12" />
+        <EntityTypeShape EntityType="SAAFModel.REHTPROYECCIONIMPUESTORENTA" Width="1.5" PointX="23.75" PointY="59.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHTSOLICITUDVACACION" Width="1.5" PointX="32.75" PointY="30.125" />
+        <EntityTypeShape EntityType="SAAFModel.REHTSOLICITUDVACACIONDETALLE" Width="1.5" PointX="35" PointY="28.25" />
+        <EntityTypeShape EntityType="SAAFModel.REHTSOLICITUDVACACIONVALOR" Width="1.5" PointX="35" PointY="33.375" />
+        <EntityTypeShape EntityType="SAAFModel.REHTUTILIDAD" Width="1.5" PointX="32.75" PointY="18.125" />
+        <EntityTypeShape EntityType="SAAFModel.REHTUTILIDADDETALLE" Width="1.5" PointX="35" PointY="14.375" />
+        <EntityTypeShape EntityType="SAAFModel.REHTUTILIDADEMPEXTERNO" Width="1.5" PointX="35" PointY="20.625" />
+        <EntityTypeShape EntityType="SAAFModel.REHTUTILIDADESEMPLEADO" Width="1.5" PointX="25.75" PointY="59.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHTVACACION" Width="1.5" PointX="39.75" PointY="59.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHTVACACIONDETALLE" Width="1.5" PointX="41.75" PointY="59.75" />
+        <EntityTypeShape EntityType="SAAFModel.SEGMUSUARIO" Width="1.5" PointX="43.75" PointY="59.75" />
+        <EntityTypeShape EntityType="SAAFModel.SEGPUSUARIOAPROBACION" Width="1.5" PointX="60.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SAAFModel.SEGPUSUARIOAPROBACIONEXCEPCION" Width="1.5" PointX="59.75" PointY="15.75" />
+        <EntityTypeShape EntityType="SAAFModel.SEGPUSUARIOASIGNADO" Width="1.5" PointX="60.75" PointY="5.75" />
+        <EntityTypeShape EntityType="SAAFModel.SEGPUSUARIOELIMINAAPROBADAS" Width="1.5" PointX="60.75" PointY="9.75" />
+        <EntityTypeShape EntityType="SAAFModel.SEGPUSUARIOPERSONAASIGNADO" Width="1.5" PointX="60.75" PointY="19.75" />
+        <EntityTypeShape EntityType="SAAFModel.SEGPUSUARIOTIPOORDENPAGO" Width="1.5" PointX="60.75" PointY="30.75" />
+        <EntityTypeShape EntityType="SAAFModel.SHEMGLOSARIODEFECTOS" Width="1.5" PointX="60.75" PointY="38.75" />
+        <EntityTypeShape EntityType="SAAFModel.SHEPMATERIALPESOENVASE" Width="1.5" PointX="45.75" PointY="60.75" />
+        <EntityTypeShape EntityType="SAAFModel.SHETCONTROLCALIDAD" Width="1.5" PointX="42.75" PointY="39.25" />
+        <EntityTypeShape EntityType="SAAFModel.SHETCONTROLCALIDADDETALLE" Width="1.5" PointX="45" PointY="41.375" />
+        <EntityTypeShape EntityType="SAAFModel.sysdiagrams" Width="1.5" PointX="26.75" PointY="21.75" />
+        <EntityTypeShape EntityType="SAAFModel.TMP_DATOS" Width="1.5" PointX="47.75" PointY="60.75" />
+        <EntityTypeShape EntityType="SAAFModel.TMP_DATOS_VAC_EMP" Width="1.5" PointX="60.75" PointY="51.75" />
+        <EntityTypeShape EntityType="SAAFModel.VTAGRUPOCLIENTE" Width="1.5" PointX="42.75" PointY="6.125" />
+        <EntityTypeShape EntityType="SAAFModel.VTAGRUPOCLIENTEDETALLE" Width="1.5" PointX="45" PointY="6" />
+        <EntityTypeShape EntityType="SAAFModel.VTAPFACTURAEXCLUSION" Width="1.5" PointX="60.75" PointY="54.75" />
+        <EntityTypeShape EntityType="SAAFModel.VTAPGRUPOITEMEXCLUSION" Width="1.5" PointX="37.75" PointY="40.125" />
+        <EntityTypeShape EntityType="SAAFModel.VTAPGRUPOITEMEXCLUSIONDETALLE" Width="1.5" PointX="40" PointY="40" />
+        <EntityTypeShape EntityType="SAAFModel.VTAPGRUPOITEMTIPOPRODUCTO" Width="1.5" PointX="60.75" PointY="59.75" />
+        <EntityTypeShape EntityType="SAAFModel.VTAPPARAMETRO" Width="1.5" PointX="2.75" PointY="61.75" />
+        <EntityTypeShape EntityType="SAAFModel.VTAPPRESUPUESTOCANTIDADESPRODUCTO" Width="1.5" PointX="8.75" PointY="61.75" />
+        <EntityTypeShape EntityType="SAAFModel.VTAPPRESUPUESTOKILOSLITROSFAMILIA" Width="1.5" PointX="10.75" PointY="61.75" />
+        <EntityTypeShape EntityType="SAAFModel.VTAPPRESUPUESTOKILOSLITROSGRUPO" Width="1.5" PointX="16.75" PointY="61.75" />
+        <EntityTypeShape EntityType="SAAFModel.VTAPPRESUPUESTOKILOSLITROSPRODUCTO" Width="1.5" PointX="61.75" PointY="23.75" />
+        <EntityTypeShape EntityType="SAAFModel.VTAPPRESUPUESTOREBATE" Width="1.5" PointX="61.75" PointY="13.75" />
+        <EntityTypeShape EntityType="SAAFModel.VTAPPRESUPUESTOREBATEGC" Width="1.5" PointX="33.75" PointY="61.75" />
+        <EntityTypeShape EntityType="SAAFModel.VTAPPRESUPUESTOVENTAS" Width="1.5" PointX="49.75" PointY="61.75" />
+        <EntityTypeShape EntityType="SAAFModel.VTAPPRESUPUESTOVENTASINTERNO" Width="1.5" PointX="51.75" PointY="61.75" />
+        <EntityTypeShape EntityType="SAAFModel.VTAPVENDEDORGRUPO" Width="1.5" PointX="32.75" PointY="39.125" />
+        <EntityTypeShape EntityType="SAAFModel.VTAPVENDEDORGRUPODETALLE" Width="1.5" PointX="35" PointY="39" />
+        <EntityTypeShape EntityType="SAAFModel.VTAPZONAGRUPO" Width="1.5" PointX="31.75" PointY="4.875" />
+        <EntityTypeShape EntityType="SAAFModel.VTAPZONAGRUPODETALLE" Width="1.5" PointX="34" PointY="1.375" />
+        <EntityTypeShape EntityType="SAAFModel.VTAPZONAGRUPOENVIOCORREO" Width="1.5" PointX="34" PointY="8.5" />
+        <EntityTypeShape EntityType="SAAFModel.VTPCLIENTEVENDEDOR" Width="1.5" PointX="62.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SAAFModel.COBPEMPLEADOCODIGOCOMISION_bck" Width="1.5" PointX="62.75" PointY="19.75" />
+        <EntityTypeShape EntityType="SAAFModel.COBPEMPLEADOZONASAP_bck" Width="1.5" PointX="62.75" PointY="35.75" />
+        <EntityTypeShape EntityType="SAAFModel.CRMPITEM" Width="1.5" PointX="62.75" PointY="40.75" />
+        <EntityTypeShape EntityType="SAAFModel.IMPUESTORENTA" Width="1.5" PointX="62.75" PointY="44.75" />
+        <EntityTypeShape EntityType="SAAFModel.logaceptarol" Width="1.5" PointX="62.75" PointY="50.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHLMOVIMIENTO" Width="1.5" PointX="62.75" PointY="53.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHPPERIODOSUELDOBASICO" Width="1.5" PointX="36.75" PointY="5.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHTMPCONSOLIDADOIESS" Width="1.5" PointX="62.75" PointY="59.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHTMPVACACION" Width="1.5" PointX="63.75" PointY="12.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHTVACACION_BCK" Width="1.5" PointX="35.75" PointY="63.75" />
+        <EntityTypeShape EntityType="SAAFModel.TMP" Width="1.5" PointX="63.75" PointY="23.75" />
+        <EntityTypeShape EntityType="SAAFModel.TMP_DATOS_VAC" Width="1.5" PointX="63.75" PointY="26.75" />
+        <EntityTypeShape EntityType="SAAFModel.TMPFACTCOBROS" Width="1.5" PointX="64.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SAAFModel.TMPNOMDETFIN" Width="1.5" PointX="64.75" PointY="4.75" />
+        <EntityTypeShape EntityType="SAAFModel.TMPNOMINADETSIM" Width="1.5" PointX="64.75" PointY="17.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHVTEMPLEADOS" Width="1.5" PointX="25.75" PointY="64.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHVTPERSONACONTRATO" Width="1.5" PointX="64.75" PointY="29.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHVTPERSONACONTRATOUSUARIO" Width="1.5" PointX="64.75" PointY="37.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHVTPERSONASCONTRATODEPTOMEDICO" Width="1.5" PointX="64.75" PointY="45.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHVTSALDOMOVIMIENTO" Width="1.5" PointX="15.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SAAFModel.VTAVTCLIENTEVENDEDORZONA" Width="1.5" PointX="45.75" PointY="64.75" />
+        <AssociationConnector Association="SAAFModel.FK_COBPCLIENTECOMISIONDETALLE_COBPCLIENTECOMISION" />
+        <AssociationConnector Association="SAAFModel.FK_COBPDIANOLABORABLEZONA_COBPDIANOLABORABLE" />
+        <AssociationConnector Association="SAAFModel.FK_COBPFACTURACOMISIONDETALLE_COBPFACTURACOMISION" />
+        <AssociationConnector Association="SAAFModel.FK_COBPZONADIASDOCUMENTODETALLE_COBPZONADIASDOCUMENTO" />
+        <AssociationConnector Association="SAAFModel.FK_COBTCOMISIONESDETALLE_COBTCOMISIONES" />
+        <AssociationConnector Association="SAAFModel.FK_COBTCOMISIONESEXCEPCIONDIASDOC_COBTCOMISIONES" />
+        <AssociationConnector Association="SAAFModel.FK_COBTCOMISIONESEXCEPCIONES_COBTCOMISIONES" />
+        <AssociationConnector Association="SAAFModel.FK_COMMPROVEEDORESCUENTABANC_COMMPROVEEDORES" />
+        <AssociationConnector Association="SAAFModel.FK_COMTCOTIZACIONGANADORA_COMTCOTIZACION" />
+        <AssociationConnector Association="SAAFModel.FK_COMTCOTIZACIONPROVEEDOR_COMTCOTIZACIONPROVEEDOR" />
+        <AssociationConnector Association="SAAFModel.FK_COMTCOTIZACIONSOLICITUDCOMPRA_COMTCOTIZACION" />
+        <AssociationConnector Association="SAAFModel.FK_COMTCOTIZACIONPROVEEDORADJUNTO_COMTCOTIZACIONPROVEEDOR" />
+        <AssociationConnector Association="SAAFModel.FK_COMTCOTIZACIONPROVEEDORDETALLE_COMTCOTIZACIONPROVEEDOR" />
+        <AssociationConnector Association="SAAFModel.FK_COMTORDENCOMPRACOTIZACION_COMTORDENCOMPRA" />
+        <AssociationConnector Association="SAAFModel.FK_COMTORDENCOMPRAPROVEEDOR_COMTORDENCOMPRA" />
+        <AssociationConnector Association="SAAFModel.FK_COMTORDENCOMPRAPROVEEDORITEM_COMTORDENCOMPRAPROVEEDOR" />
+        <AssociationConnector Association="SAAFModel.FK_COMTORDENPAGOADJUNTO_COMTORDENPAGO" />
+        <AssociationConnector Association="SAAFModel.FK_COMTORDENPAGOFACTURA_COMTORDENPAGO" />
+        <AssociationConnector Association="SAAFModel.FK_COMTORDENPAGOFACTOCP_COMTORDENPAGOFACTURA" />
+        <AssociationConnector Association="SAAFModel.FK_COMTARCHIVOADJUNTO_COMTSOLICITUDCOMPRA" />
+        <AssociationConnector Association="SAAFModel.FK_COMTSOLICITUDCOMPRADETALLE_COMTSOLICITUDCOMPRA" />
+        <AssociationConnector Association="SAAFModel.FK_CRETINFORMERTCCLIENTES_CRETINFORMERTC" />
+        <AssociationConnector Association="SAAFModel.FK_CRETINFORMERTCCROQUIS_CRETINFORMERTC" />
+        <AssociationConnector Association="SAAFModel.FK_CRETINFORMERTCCULTIVOS_CRETINFORMERTC" />
+        <AssociationConnector Association="SAAFModel.FK_CRETINFORMERTCDOCUMENTOSPENDIENTES_CRETINFORMERTC" />
+        <AssociationConnector Association="SAAFModel.FK_CRETINFORMERTCPROVEEDOR_CRETINFORMERTC" />
+        <AssociationConnector Association="SAAFModel.FK_CRETSOLICITUDCREDITODIRECCION_CRETSOLICITUDCREDITO" />
+        <AssociationConnector Association="SAAFModel.FK_CRETSOLICITUDCREDITONOMBRAMIENTO_CRETSOLICITUDCREDITO" />
+        <AssociationConnector Association="SAAFModel.FK_CRETSOLICITUDCREDITOOTROSACTIVOS_CRETSOLICITUDCREDITO" />
+        <AssociationConnector Association="SAAFModel.FK_CRETSOLICITUDCREDITOPROPIEDADES_CRETSOLICITUDCREDITO" />
+        <AssociationConnector Association="SAAFModel.FK_CRETSOLICITUDCREDITOREFPERSONAL_CRETSOLICITUDCREDITO" />
+        <AssociationConnector Association="SAAFModel.FK_GENMPERSONACAPACITACION_GENMPERSONA" />
+        <AssociationConnector Association="SAAFModel.FK_GENMPERSONADIRECCION_GENMPERSONA1" />
+        <AssociationConnector Association="SAAFModel.FK_GENMPERSONAEDUCACION_GENMPERSONA" />
+        <AssociationConnector Association="SAAFModel.FK_GENMPERSONAFICHAMEDICA_GENMPERSONA" />
+        <AssociationConnector Association="SAAFModel.FK_REHPEMPLEADO_GENMPERSONA" />
+        <AssociationConnector Association="SAAFModel.FK_GENMPERSONAFICHAMEDICAADJUNTO_GENMPERSONAFICHAMEDICA" />
+        <AssociationConnector Association="SAAFModel.FK_GENPCANTON_GENPPROVINCIA" />
+        <AssociationConnector Association="SAAFModel.FK_GENPPARROQUIA_GENPCANTON" />
+        <AssociationConnector Association="SAAFModel.FK_GENPPROVINCIA_GENPPAIS" />
+        <AssociationConnector Association="SAAFModel.FK_GENPPERFILFLUJO_GENPPERFIL" />
+        <AssociationConnector Association="SAAFModel.FK_REHLNOMINAPAGODETALLE_REHLNOMINAPAGO" />
+        <AssociationConnector Association="SAAFModel.FK_REHMGESTORCONSULTADETALLE_REHMGESTORCONSULTA" />
+        <AssociationConnector Association="SAAFModel.FK_REHPEMPLEADOCARGAFAMILIAR_REHPEMPLEADO" />
+        <AssociationConnector Association="SAAFModel.FK_REHPEMPLEADOCONTACTO_REHPEMPLEADO" />
+        <AssociationConnector Association="SAAFModel.FK_REHPEMPLEADOCONTRATO_REHPEMPLEADO" />
+        <AssociationConnector Association="SAAFModel.FK_REHPEMPLEADODOCUMENTO_REHPEMPLEADO" />
+        <AssociationConnector Association="SAAFModel.FK_REHPEMPLEADOCONTRATOCUENTABANC_REHPEMPLEADOCONTRATO" />
+        <AssociationConnector Association="SAAFModel.FK_REHPEMPLEADOCONTRATOMAXPORCCOMISION_REHPEMPLEADOCONTRATO" />
+        <AssociationConnector Association="SAAFModel.FK_REHTALIMENTACIONDETALLE_REHTALIMENTACION" />
+        <AssociationConnector Association="SAAFModel.FK_REHTASISTENCIADETALLE_REHTASISTENCIADETALLE" />
+        <AssociationConnector Association="SAAFModel.FK_REHTCOMISIONDETALLE_REHTCOMISION" />
+        <AssociationConnector Association="SAAFModel.FK_REHTFONDORESERVADETALLE_REHTFONDORESERVA" />
+        <AssociationConnector Association="SAAFModel.FK_REHTLIQUIDACIONDETALLEBS_REHTLIQUIDACION" />
+        <AssociationConnector Association="SAAFModel.FK_REHTLIQUIDACIONDETALLEROL_REHTLIQUIDACION" />
+        <AssociationConnector Association="SAAFModel.FK_REHTLIQUIDACIONDETALLEVAC_REHTLIQUIDACION" />
+        <AssociationConnector Association="SAAFModel.FK_REHTLIQUIDACIONRESUMEN_REHTLIQUIDACION" />
+        <AssociationConnector Association="SAAFModel.FK_REHTNOMINADETALLE_REHTNOMINA" />
+        <AssociationConnector Association="SAAFModel.FK_REHTNOMINAEMPLEADO_REHTNOMINA" />
+        <AssociationConnector Association="SAAFModel.FK_REHTNOVEDADDETALLE_REHTNOVEDAD" />
+        <AssociationConnector Association="SAAFModel.FK_REHTPRESTAMOINTERNODETALLE_REHTPRESTAMOINTERNO" />
+        <AssociationConnector Association="SAAFModel.FK_REHTSOLICITUDVACACIONDETALLE_REHTSOLICITUDVACACION" />
+        <AssociationConnector Association="SAAFModel.FK_REHTSOLICITUDVACACIONVALOR_REHTSOLICITUDVACACION" />
+        <AssociationConnector Association="SAAFModel.FK_REHTUTILIDADDETALLE_REHTUTILIDAD" />
+        <AssociationConnector Association="SAAFModel.FK_REHTUTILIDADEMPEXTERNO_REHTUTILIDAD" />
+        <AssociationConnector Association="SAAFModel.FK_SHETCONTROLCALIDADDETALLE_SHETCONTROLCALIDAD" />
+        <AssociationConnector Association="SAAFModel.FK_VTAGRUPOCLIENTEDETALLE_VTAGRUPOCLIENTE" />
+        <AssociationConnector Association="SAAFModel.FK_VTAPGRUPOITEMEXCLUSIONDETALLE_VTAPGRUPOITEMEXCLUSION" />
+        <AssociationConnector Association="SAAFModel.FK_VTAPVENDEDORGRUPODETALLE_VTAPVENDEDORGRUPO" />
+        <AssociationConnector Association="SAAFModel.FK_VTAPZONAGRUPODETALLE_VTAPZONAGRUPO" />
+        <AssociationConnector Association="SAAFModel.FK_VTAPZONAGRUPOENVIOCORREO_VTAPZONAGRUPO" />
+        <EntityTypeShape EntityType="SAAFModel.REHPDEDUCCIONIMPUESTORENTACARGAS" Width="1.5" PointX="61.375" PointY="64.75" />
+        <EntityTypeShape EntityType="SAAFModel.SEGPUSUARIOASIGNADOPERFILMENU" Width="1.5" PointX="63.375" PointY="64.75" />
+        <EntityTypeShape EntityType="SAAFModel.SEGPUSUARIOPERSONAASIGNADOPERFILMENU" Width="1.5" PointX="28.375" PointY="65.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHTSOLICITUDVACACIONSALDOS" Width="1.5" PointX="35" PointY="72.25" />
+        <AssociationConnector Association="SAAFModel.FK_REHTSOLICITUDVACACIONSALDOS_REHTSOLICITUDVACACION" />
+        <EntityTypeShape EntityType="SAAFModel.CREPPARAMETRO" Width="1.5" PointX="30.375" PointY="65.75" />
+        <EntityTypeShape EntityType="SAAFModel.REHPREPORTENOVEDADES" Width="1.5" PointX="65.375" PointY="51" />
+        <EntityTypeShape EntityType="SAAFModel.REHPREPORTENOVEDADESDETALLE" Width="1.5" PointX="67.625" PointY="51.125" />
+        <AssociationConnector Association="SAAFModel.FK_REHPREPORTENOVEDADESDETALLE_REHPREPORTENOVEDADES" />
+        <EntityTypeShape EntityType="SAAFModel.CRETPROCESOCREDITO" Width="1.5" PointX="5.75" PointY="12.875" />
+        <AssociationConnector Association="SAAFModel.FK_CRETPROCESOCREDITOACCIONISTA_CRETPROCESOCREDITO" />
+        <AssociationConnector Association="SAAFModel.FK_CRETPROCESOCREDITOADMACTUAL_CRETPROCESOCREDITO" />
+        <AssociationConnector Association="SAAFModel.FK_CRETPROCESOCREDITOBURO_CRETPROCESOCREDITO" />
+        <AssociationConnector Association="SAAFModel.FK_CRETPROCESOCREDITODETALLE_CRETPROCESOCREDITO" />
+        <AssociationConnector Association="SAAFModel.FK_CRETPROCESOCREDITOFUNCIONJUDICIAL_CRETPROCESOCREDITO" />
+        <AssociationConnector Association="SAAFModel.FK_CRETPROCESOCREDITOREVISION_CRETPROCESOCREDITO" />
+        <AssociationConnector Association="SAAFModel.FK_CRETPROCESOCREDITOSRI_CRETPROCESOCREDITO" />
+        <EntityTypeShape EntityType="SAAFModel.CRETPROCESOCREDITORESOLUCIONADJUNTO" Width="1.5" PointX="8" PointY="70.375" />
+        <AssociationConnector Association="SAAFModel.FK_CRETPROCESOCREDITORESOLUCIONADJUNTO_CRETPROCESOCREDITO" />
+        <EntityTypeShape EntityType="SAAFModel.CRETSOLICITUDCREDITOREFCOMERCIAL" Width="1.5" PointX="3" PointY="66.75" />
+        <AssociationConnector Association="SAAFModel.FK_CRETSOLICITUDCREDITOREFCOMERCIAL_CRETSOLICITUDCREDITO" />
+        <EntityTypeShape EntityType="SAAFModel.VTAPCAMPANAPUBLICITARIA" Width="1.5" PointX="65.375" PointY="57.625" />
+        <EntityTypeShape EntityType="SAAFModel.VTAPCAMPANAPUBLICITARIAADJUNTO" Width="1.5" PointX="67.625" PointY="60" />
+        <EntityTypeShape EntityType="SAAFModel.VTAPCAMPANAPUBLICITARIADESTINATARIO" Width="1.5" PointX="67.625" PointY="56.125" />
+        <AssociationConnector Association="SAAFModel.FK_VTAPCAMPANAPUBLICITARIAADJUNTO_VTAPCAMPANAPUBLICITARIA" />
+        <AssociationConnector Association="SAAFModel.FK_VTAPCAMPANAPUBLICITARIADESTINATARIO_VTAPCAMPANAPUBLICITARIA" />
+        <EntityTypeShape EntityType="SAAFModel.VTAPCAMPANAPUBLICITARIACUERPO" Width="1.5" PointX="67.625" PointY="63.875" />
+        <AssociationConnector Association="SAAFModel.FK_VTAPCAMPANAPUBLICITARIACUERPO_VTAPCAMPANAPUBLICITARIA" />
+        <EntityTypeShape EntityType="SAAFModel.AFIPAGRUPACION" Width="1.5" PointX="3.375" PointY="27.75" />
+        <EntityTypeShape EntityType="SAAFModel.AFITMOVIMIENTOACTIVOFIJO" Width="1.5" PointX="57.375" PointY="65.75" />
+        <EntityTypeShape EntityType="SAAFModel.COBTSEGUIMIENTOCOMPROMISO" Width="1.5" PointX="66.375" PointY="9.75" />
+        <EntityTypeShape EntityType="SAAFModel.CRETINFORMERTCPRODUCTOS" Width="1.5" PointX="13" PointY="0.75" />
+        <AssociationConnector Association="SAAFModel.FK_CRETINFORMERTCPRODUCTOS_CRETINFORMERTC" />
+        <EntityTypeShape EntityType="SAAFModel.CRETSOLICITUDCREDITOREFBANCARIA" Width="1.5" PointX="3" PointY="73.375" />
+        <AssociationConnector Association="SAAFModel.FK_CRETSOLICITUDCREDITOREFBANCARIA_CRETSOLICITUDCREDITO" />
+        <EntityTypeShape EntityType="SAAFModel.CRETPROCESOCREDITOCEDULA" Width="1.5" PointX="8" PointY="84.625" />
+        <EntityTypeShape EntityType="SAAFModel.CRETPROCESOCREDITONOMBRAMIENTO" Width="1.5" PointX="8" PointY="80" />
+        <EntityTypeShape EntityType="SAAFModel.CRETPROCESOCREDITORUC" Width="1.5" PointX="8" PointY="75.375" />
+        <EntityTypeShape EntityType="SAAFModel.CRETPROCESOCREDITORUCDIRECCION" Width="1.5" PointX="10.25" PointY="75.625" />
+        <AssociationConnector Association="SAAFModel.FK_CRETPROCESOCREDITOCEDULA_CRETPROCESOCREDITO" />
+        <AssociationConnector Association="SAAFModel.FK_CRETPROCESOCREDITONOMBRAMIENTO_CRETPROCESOCREDITO" />
+        <AssociationConnector Association="SAAFModel.FK_CRETPROCESOCREDITORUC_CRETPROCESOCREDITO" />
+        <AssociationConnector Association="SAAFModel.FK_CRETPROCESOCREDITORUCDIRECCION_CRETPROCESOCREDITORUC" />
+        <EntityTypeShape EntityType="SAAFModel.CRETPROCESOCREDITOOTROSACTIVOS" Width="1.5" PointX="8" PointY="106.375" />
+        <EntityTypeShape EntityType="SAAFModel.CRETPROCESOCREDITOPROPIEDADES" Width="1.5" PointX="8" PointY="95" />
+        <EntityTypeShape EntityType="SAAFModel.CRETPROCESOCREDITOREFBANCARIA" Width="1.5" PointX="8" PointY="89.5" />
+        <EntityTypeShape EntityType="SAAFModel.CRETPROCESOCREDITOREFCOMERCIAL" Width="1.5" PointX="8" PointY="100" />
+        <AssociationConnector Association="SAAFModel.FK_CRETPROCESOCREDITOOTROSACTIVOS_CRETPROCESOCREDITO" />
+        <AssociationConnector Association="SAAFModel.FK_CRETPROCESOCREDITOPROPIEDADES_CRETPROCESOCREDITO" />
+        <AssociationConnector Association="SAAFModel.FK_CRETPROCESOCREDITOREFBANCARIA_CRETPROCESOCREDITO" />
+        <AssociationConnector Association="SAAFModel.FK_CRETPROCESOCREDITOREFCOMERCIAL_CRETPROCESOCREDITO" />
+        <EntityTypeShape EntityType="SAAFModel.COMTLOGISTICA" Width="1.5" PointX="66.375" PointY="21.75" />
+        <EntityTypeShape EntityType="SAAFModel.VTAPPRESUPUESTOKILOSLITROS" Width="1.5" PointX="22.375" PointY="66.75" />
+<<<<<<< HEAD
+        
+        
+        <EntityTypeShape EntityType="SAAFModel.VTALREBATECLIENTEANUALDETALLE" Width="1.5" PointX="67.375" PointY="0.75" />
+        <EntityTypeShape EntityType="SAAFModel.VTALREBATECLIENTEDETALLE" Width="1.5" PointX="13.375" PointY="67.75" />
+        <EntityTypeShape EntityType="SAAFModel.VTAPPRODUCTOLINEABIOLOGICA" Width="1.5" PointX="3.375" PointY="61.75" />
+        <EntityTypeShape EntityType="SAAFModel.COMTGUIAREMISIONDETALLE" Width="1.5" PointX="44.5" PointY="69.5" />
+        <EntityTypeShape EntityType="SAAFModel.SEGPUSUARIOASIGNADOSAP" Width="1.5" PointX="32.375" PointY="67.75" />
+        <EntityTypeShape EntityType="SAAFModel.COMTGUIAREMISION" Width="1.5" PointX="42.25" PointY="66.375" />
+        <EntityTypeShape EntityType="SAAFModel.COMTGUIAREMISIONFACTURA" Width="1.5" PointX="48.5" PointY="68.25" />
+        <AssociationConnector Association="SAAFModel.FK_COMTGUIAREMISIONDETALLE_COMTGUIAREMISION" />
+        <AssociationConnector Association="SAAFModel.FK_COMTGUIAREMISIONFACTURA_COMTGUIAREMISION" />
+        <AssociationConnector Association="SAAFModel.FK_COMTGUIAREMISIONFACTURA_COMTORDENPAGOFACTURA" />
+        <EntityTypeShape EntityType="SAAFModel.REHTHORASEXTRASDETALLE" Width="1.5" PointX="9.6448703248262735" PointY="22.698980610211837" />
+        <EntityTypeShape EntityType="SAAFModel.REHPREPORTE107" Width="1.5" PointX="1.7640383270401685" PointY="27.9164114128409" />
+        <EntityTypeShape EntityType="SAAFModel.ADMMPRESENTACION" Width="1.5" PointX="2.5919630874842232" PointY="5.4058983798166267" />
+        <EntityTypeShape EntityType="SAAFModel.COBPCLIENTECAMBIOZONA" Width="1.5" PointX="11.407923431791328" PointY="17.096906029198742" />
+        <EntityTypeShape EntityType="SAAFModel.ADMMBODEGA" Width="1.5" PointX="2.6786947411851467" PointY="20.44217687307027" />
+        <EntityTypeShape EntityType="SAAFModel.ADMMITEM" Width="1.5" PointX="5.7257926732887476" PointY="19.535869160450932" />
+        <EntityTypeShape EntityType="SAAFModel.ADMPSTOCK" Width="1.5" PointX="11.515325786320179" PointY="17.458087661051231" />
+        <EntityTypeShape EntityType="SAAFModel.ADMTMOVIMIENTOINVENTARIO" Width="1.5" PointX="1.6411458354634911" PointY="23.378606896558129" />
+        <EntityTypeShape EntityType="SAAFModel.ADMTMOVIMIENTOINVENTARIODETALLE" Width="1.5" PointX="8.0706760194481717" PointY="19.867922553731091" />
+        <EntityTypeShape EntityType="SAAFModel.SHEMBODEGAEPP" Width="1.5" PointX="6.2673070031531655" PointY="17.123828061448329" />
+        <EntityTypeShape EntityType="SAAFModel.SHEMITEMEPP" Width="1.5" PointX="9.2249750295770241" PointY="1.7345192589492162" />
+        <EntityTypeShape EntityType="SAAFModel.SHEPSTOCKEPP" Width="1.5" PointX="0.35051723772218324" PointY="20.431723619080952" />
+        <EntityTypeShape EntityType="SAAFModel.SHETENTREGAEPP" Width="1.5" PointX="8.8772500440838051" PointY="24.216180469941431" />
+        <EntityTypeShape EntityType="SAAFModel.SHETENTREGAEPPDETALLE" Width="1.5" PointX="7.72055374259155" PointY="14.390611267830529" />
+        <EntityTypeShape EntityType="SAAFModel.SHETTRANSFERENCIASTOCK" Width="1.5" PointX="7.4223087967477319" PointY="15.187253810086871" />
+        <EntityTypeShape EntityType="SAAFModel.SHETTRANSFERENCIASTOCKDETALLE" Width="1.5" PointX="11.4633960795884" PointY="5.978649499816191" />
+        <AssociationConnector Association="SAAFModel.FK_ADMTMOVIMIENTOINVENTARIODETALLE_ADMTMOVIMIENTOINVENTARIO" />
+        <AssociationConnector Association="SAAFModel.FK_SHETENTREGAEPPDETALLE_SHETENTREGAEPP" />
+        <AssociationConnector Association="SAAFModel.FK_SHETTRANSFERENCIASTOCKDETALLE_SHETTRANSFERENCIASTOCK" />
+        <EntityTypeShape EntityType="SAAFModel.SHETACTUALIZACIONINVENTARIO" Width="1.5" PointX="3.6046603655464295" PointY="6.3808345824390811" />
+        <EntityTypeShape EntityType="SAAFModel.SHETACTUALIZACIONINVENTARIODETALLE" Width="1.5" PointX="1.7710755438409165" PointY="24.886987086798523" />
+        <AssociationConnector Association="SAAFModel.FK_SHETACTUALIZACIONINVENTARIODETALLE_SHETACTUALIZACIONINVENTARIO" />
+        <EntityTypeShape EntityType="SAAFModel.COMPCOSTOPORBULTO" Width="1.5" PointX="2.6504128140632126" PointY="28.540591223417124" />
+        <EntityTypeShape EntityType="SAAFModel.SHETMOVIMIENTOINVENTARIO" Width="1.5" PointX="1.3532863414628833" PointY="19.794575789847681" />
+        <EntityTypeShape EntityType="SAAFModel.SHETMOVIMIENTOINVENTARIODETALLE" Width="1.5" PointX="3.7007480951495224" PointY="11.330843543322219" />
+        <AssociationConnector Association="SAAFModel.FK_SHETMOVIMIENTOINVENTARIODETALLE_SHETMOVIMIENTOINVENTARIO" />
+        <EntityTypeShape EntityType="SAAFModel.COMTGUIAREMISIONADJUNTO" Width="1.5" PointX="5.9070735917925248" PointY="9.5090792074376154" />
+        <AssociationConnector Association="SAAFModel.FK_COMTGUIAREMISIONADJUNTO_COMTGUIAREMISION" />
+        <EntityTypeShape EntityType="SAAFModel.GENPTIPOTRANSPORTEALMACENCC" Width="1.5" PointX="4.4992300684094566" PointY="17.700178527133623" />
+        <EntityTypeShape EntityType="SAAFModel.GENPTIPOTRANSPORTEZONACC" Width="1.5" PointX="4.3282251787969033" PointY="10.929238115870039" />
+        <EntityTypeShape EntityType="SAAFModel.CRETPROCESOCREDITOADJUNTO" Width="1.5" PointX="11.450919527304787" PointY="22.8131842868464" />
+        <AssociationConnector Association="SAAFModel.FK_CRETPROCESOCREDITOADJUNTO_CRETPROCESOCREDITO" />
+        <EntityTypeShape EntityType="SAAFModel.GENPRIBBONFAVORITOS" Width="1.5" PointX="1.3290686594923347" PointY="15.273424766619422" />
+        <EntityTypeShape EntityType="SAAFModel.VTAPGRUPOITEMTIPOPRODUCTOSAAF" Width="1.5" PointX="6.4618222035755508" PointY="15.629517383700943" />
+        <EntityTypeShape EntityType="SAAFModel.COMTSOLICITUDANTICIPO" Width="1.5" PointX="4.4246844278763442" PointY="9.906118963801358" />
+        <EntityTypeShape EntityType="SAAFModel.VTAPCARTERAZONASAPENVIOCORREO" Width="1.5" PointX="5.4968441452350678" PointY="30.637771456799364" />
+        <AssociationConnector Association="SAAFModel.FK_VTAPCARTERAZONASAPENVIOCORREO_VTAPZONAGRUPODETALLE" />
+        <EntityTypeShape EntityType="SAAFModel.COMTLIQUIDACIONANTICIPO" Width="1.5" PointX="6.2099299646028925" PointY="1.2267642324914989" />
+        <EntityTypeShape EntityType="SAAFModel.COMTLIQUIDACIONANTICIPODETALLE" Width="1.5" PointX="2.8482307916731715" PointY="5.47744006173566" />
+        <EntityTypeShape EntityType="SAAFModel.COMTLIQUIDACIONANTICIPOSOLICITUD" Width="1.5" PointX="7.4028496106168475" PointY="22.215872819635958" />
+        <AssociationConnector Association="SAAFModel.FK_COMTLIQUIDACIONANTICIPODETALLE_COMTLIQUIDACIONANTICIPO" />
+        <AssociationConnector Association="SAAFModel.FK_COMTLIQUIDACIONANTICIPOSOLICITUD_COMTLIQUIDACIONANTICIPO" />
+        <AssociationConnector Association="SAAFModel.FK_COMTLIQUIDACIONANTICIPOSOLICITUD_COMTSOLICITUDANTICIPO" />
+        <EntityTypeShape EntityType="SAAFModel.REHTTRANSACCIONAUTOIZACION" Width="1.5" PointX="2.0545542249710085" PointY="23.09949084701924" />
+        <EntityTypeShape EntityType="SAAFModel.VTATREBATECLIENTE" Width="1.5" PointX="7.4081858263389151" PointY="29.112099720682995" />
+        <EntityTypeShape EntityType="SAAFModel.VTATREBATECLIENTEANUAL" Width="1.5" PointX="5.0167684224512277" PointY="28.518610282111265" />
+        <EntityTypeShape EntityType="SAAFModel.VTATREBATECLIENTEANUALDETALLE" Width="1.5" PointX="4.2416901030771852" PointY="1.0991814588658426" />
+        <EntityTypeShape EntityType="SAAFModel.VTATREBATECLIENTEDETALLE" Width="1.5" PointX="0.60323769813554251" PointY="3.5283502803781768" />
+        <AssociationConnector Association="SAAFModel.FK_VTATREBATECLIENTEDETALLE_VTATREBATECLIENTE" />
+        <AssociationConnector Association="SAAFModel.FK_VTATREBATECLIENTEANUALDETALLE_VTATREBATECLIENTE" />
+        </Diagram>
+=======
+        <EntityTypeShape EntityType="SAAFModel.COMTGUIAREMISION" Width="1.5" PointX="42.25" PointY="69.375" />
+        <EntityTypeShape EntityType="SAAFModel.COMTGUIAREMISIONDETALLE" Width="1.5" PointX="44.5" PointY="71.75" />
+        <AssociationConnector Association="SAAFModel.FK_COMTGUIAREMISION_COMTORDENPAGOFACTURA" />
+        <AssociationConnector Association="SAAFModel.FK_COMTGUIAREMISIONDETALLE_COMTGUIAREMISION" />
+        <EntityTypeShape EntityType="SAAFModel.SHETTRANSFERENCIASTOCK" Width="1.5" PointX="0.75" PointY="42.875" />
+        <EntityTypeShape EntityType="SAAFModel.SHETTRANSFERENCIASTOCKDETALLE" Width="1.5" PointX="3" PointY="35" />
+        <EntityTypeShape EntityType="SAAFModel.VTAPPRODUCTOLINEABIOLOGICA" PointX="54.375" PointY="66.75" Width="1.5" />
+        <AssociationConnector Association="SAAFModel.FK_SHETMOVIMIENTOINVENTARIO_SHETTRANSFERENCIASTOCK" />
+        <AssociationConnector Association="SAAFModel.FK_SHETTRANSFERENCIASTOCKDETALLE_SHETTRANSFERENCIASTOCK" />
+        <EntityTypeShape EntityType="SAAFModel.ADMMPRESENTACION" Width="1.5" PointX="67.375" PointY="0.75" />
+        <EntityTypeShape EntityType="SAAFModel.SEGPUSUARIOASIGNADOSAP" Width="1.5" PointX="67.375" PointY="4.75" />
+        <EntityTypeShape EntityType="SAAFModel.VTALREBATECLIENTEANUALDETALLE" Width="1.5" PointX="13.375" PointY="67.75" />
+        <EntityTypeShape EntityType="SAAFModel.VTALREBATECLIENTEDETALLE" Width="1.5" PointX="67.375" PointY="27.75" />
+        <EntityTypeShape EntityType="SAAFModel.SHEMITEMEPP" Width="1.5" PointX="67.375" PointY="16.75" />
+        <EntityTypeShape EntityType="SAAFModel.SHETENTREGAEPP" Width="1.5" PointX="67.375" PointY="36.25" />
+        <EntityTypeShape EntityType="SAAFModel.SHETENTREGAEPPDETALLE" Width="1.5" PointX="69.625" PointY="36" />
+        <AssociationConnector Association="SAAFModel.FK_SHETENTREGAEPPDETALLE_SHETENTREGAEPP" />
+      </Diagram>
+>>>>>>> e241fc62f32a289f628a81edd38764407b1c4e9f
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

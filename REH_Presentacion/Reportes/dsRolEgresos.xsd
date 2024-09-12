@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsRolIngresos" targetNamespace="http://tempuri.org/dsRolIngresos.xsd" xmlns:mstns="http://tempuri.org/dsRolIngresos.xsd" xmlns="http://tempuri.org/dsRolIngresos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsRolIngresos" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsRolIngresos" msprop:Generator_UserDSName="dsRolIngresos">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RolEgresos" msprop:Generator_TableClassName="RolEgresosDataTable" msprop:Generator_TableVarName="tableRolEgresos" msprop:Generator_TablePropName="RolEgresos" msprop:Generator_RowDeletingName="RolEgresosRowDeleting" msprop:Generator_RowChangingName="RolEgresosRowChanging" msprop:Generator_RowEvHandlerName="RolEgresosRowChangeEventHandler" msprop:Generator_RowDeletedName="RolEgresosRowDeleted" msprop:Generator_UserTableName="RolEgresos" msprop:Generator_RowChangedName="RolEgresosRowChanged" msprop:Generator_RowEvArgName="RolEgresosRowChangeEvent" msprop:Generator_RowClassName="RolEgresosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:string" minOccurs="0" />
+              <xs:element name="CEDULA" msprop:Generator_ColumnVarNameInTable="columnCEDULA" msprop:Generator_ColumnPropNameInRow="CEDULA" msprop:Generator_ColumnPropNameInTable="CEDULAColumn" msprop:Generator_UserColumnName="CEDULA" type="xs:string" minOccurs="0" />
+              <xs:element name="EMPLEADO" msprop:Generator_ColumnVarNameInTable="columnEMPLEADO" msprop:Generator_ColumnPropNameInRow="EMPLEADO" msprop:Generator_ColumnPropNameInTable="EMPLEADOColumn" msprop:Generator_UserColumnName="EMPLEADO" type="xs:string" minOccurs="0" />
+              <xs:element name="DEPARTAMENTO" msprop:Generator_ColumnVarNameInTable="columnDEPARTAMENTO" msprop:Generator_ColumnPropNameInRow="DEPARTAMENTO" msprop:Generator_ColumnPropNameInTable="DEPARTAMENTOColumn" msprop:Generator_UserColumnName="DEPARTAMENTO" type="xs:string" minOccurs="0" />
+              <xs:element name="DIAS_x0020_LABORADOS" msprop:Generator_ColumnVarNameInTable="columnDIAS_LABORADOS" msprop:Generator_ColumnPropNameInRow="DIAS_LABORADOS" msprop:Generator_ColumnPropNameInTable="DIAS_LABORADOSColumn" msprop:Generator_UserColumnName="DIAS LABORADOS" type="xs:string" minOccurs="0" />
+              <xs:element name="TOTAL_x0020_INGRESOS_x0020_IESS" msprop:Generator_ColumnVarNameInTable="columnTOTAL_INGRESOS_IESS" msprop:Generator_ColumnPropNameInRow="TOTAL_INGRESOS_IESS" msprop:Generator_ColumnPropNameInTable="TOTAL_INGRESOS_IESSColumn" msprop:Generator_UserColumnName="TOTAL INGRESOS IESS" type="xs:string" minOccurs="0" />
+              <xs:element name="TOTAL_x0020_INGRESOS_x0020_NO_x0020_IESS" msprop:Generator_ColumnVarNameInTable="columnTOTAL_INGRESOS_NO_IESS" msprop:Generator_ColumnPropNameInRow="TOTAL_INGRESOS_NO_IESS" msprop:Generator_ColumnPropNameInTable="TOTAL_INGRESOS_NO_IESSColumn" msprop:Generator_UserColumnName="TOTAL INGRESOS NO IESS" type="xs:string" minOccurs="0" />
+              <xs:element name="TOTAL_x0020_INGRESOS" msprop:Generator_ColumnVarNameInTable="columnTOTAL_INGRESOS" msprop:Generator_ColumnPropNameInRow="TOTAL_INGRESOS" msprop:Generator_ColumnPropNameInTable="TOTAL_INGRESOSColumn" msprop:Generator_UserColumnName="TOTAL INGRESOS" type="xs:string" minOccurs="0" />
+              <xs:element name="APORTE_x0020_IESS_x0020_EMPLEADO" msprop:Generator_ColumnVarNameInTable="columnAPORTE_IESS_EMPLEADO" msprop:Generator_ColumnPropNameInRow="APORTE_IESS_EMPLEADO" msprop:Generator_ColumnPropNameInTable="APORTE_IESS_EMPLEADOColumn" msprop:Generator_UserColumnName="APORTE IESS EMPLEADO" type="xs:string" minOccurs="0" />
+              <xs:element name="APORTE_x0020_IESS_x0020_CONYUGE_x0020_EMPLEADO" msprop:Generator_ColumnVarNameInTable="columnAPORTE_IESS_CONYUGE_EMPLEADO" msprop:Generator_ColumnPropNameInRow="APORTE_IESS_CONYUGE_EMPLEADO" msprop:Generator_ColumnPropNameInTable="APORTE_IESS_CONYUGE_EMPLEADOColumn" msprop:Generator_UserColumnName="APORTE IESS CONYUGE EMPLEADO" type="xs:string" minOccurs="0" />
+              <xs:element name="ANTICIPO_x0020_SUELDO" msprop:Generator_ColumnVarNameInTable="columnANTICIPO_SUELDO" msprop:Generator_ColumnPropNameInRow="ANTICIPO_SUELDO" msprop:Generator_ColumnPropNameInTable="ANTICIPO_SUELDOColumn" msprop:Generator_UserColumnName="ANTICIPO SUELDO" type="xs:string" minOccurs="0" />
+              <xs:element name="ANTICIPO_x0020_ALIMENTACION" msprop:Generator_ColumnVarNameInTable="columnANTICIPO_ALIMENTACION" msprop:Generator_ColumnPropNameInRow="ANTICIPO_ALIMENTACION" msprop:Generator_ColumnPropNameInTable="ANTICIPO_ALIMENTACIONColumn" msprop:Generator_UserColumnName="ANTICIPO ALIMENTACION" type="xs:string" minOccurs="0" />
+              <xs:element name="DESCUENTO_x0020_DE_x0020_HABERES" msprop:Generator_ColumnVarNameInTable="columnDESCUENTO_DE_HABERES" msprop:Generator_ColumnPropNameInRow="DESCUENTO_DE_HABERES" msprop:Generator_ColumnPropNameInTable="DESCUENTO_DE_HABERESColumn" msprop:Generator_UserColumnName="DESCUENTO DE HABERES" type="xs:string" minOccurs="0" />
+              <xs:element name="DESCUENTO_x0020_CELULAR" msprop:Generator_ColumnVarNameInTable="columnDESCUENTO_CELULAR" msprop:Generator_ColumnPropNameInRow="DESCUENTO_CELULAR" msprop:Generator_ColumnPropNameInTable="DESCUENTO_CELULARColumn" msprop:Generator_UserColumnName="DESCUENTO CELULAR" type="xs:string" minOccurs="0" />
+              <xs:element name="VACACIONES_x0020_PAGADAS" msprop:Generator_ColumnVarNameInTable="columnVACACIONES_PAGADAS" msprop:Generator_ColumnPropNameInRow="VACACIONES_PAGADAS" msprop:Generator_ColumnPropNameInTable="VACACIONES_PAGADASColumn" msprop:Generator_UserColumnName="VACACIONES PAGADAS" type="xs:string" minOccurs="0" />
+              <xs:element name="PRESTAMO_x0020_HIPOTECARIO" msprop:Generator_ColumnVarNameInTable="columnPRESTAMO_HIPOTECARIO" msprop:Generator_ColumnPropNameInRow="PRESTAMO_HIPOTECARIO" msprop:Generator_ColumnPropNameInTable="PRESTAMO_HIPOTECARIOColumn" msprop:Generator_UserColumnName="PRESTAMO HIPOTECARIO" type="xs:string" minOccurs="0" />
+              <xs:element name="PRESTAMO_x0020_QUIROGRAFARIO" msprop:Generator_ColumnVarNameInTable="columnPRESTAMO_QUIROGRAFARIO" msprop:Generator_ColumnPropNameInRow="PRESTAMO_QUIROGRAFARIO" msprop:Generator_ColumnPropNameInTable="PRESTAMO_QUIROGRAFARIOColumn" msprop:Generator_UserColumnName="PRESTAMO QUIROGRAFARIO" type="xs:string" minOccurs="0" />
+              <xs:element name="PRESTAMO_x0020_INTERNO" msprop:Generator_ColumnVarNameInTable="columnPRESTAMO_INTERNO" msprop:Generator_ColumnPropNameInRow="PRESTAMO_INTERNO" msprop:Generator_ColumnPropNameInTable="PRESTAMO_INTERNOColumn" msprop:Generator_UserColumnName="PRESTAMO INTERNO" type="xs:string" minOccurs="0" />
+              <xs:element name="RETENCION_x0020_JUDICIAL" msprop:Generator_ColumnVarNameInTable="columnRETENCION_JUDICIAL" msprop:Generator_ColumnPropNameInRow="RETENCION_JUDICIAL" msprop:Generator_ColumnPropNameInTable="RETENCION_JUDICIALColumn" msprop:Generator_UserColumnName="RETENCION JUDICIAL" type="xs:string" minOccurs="0" />
+              <xs:element name="OTROS_x0020_EGRESOS" msprop:Generator_ColumnVarNameInTable="columnOTROS_EGRESOS" msprop:Generator_ColumnPropNameInRow="OTROS_EGRESOS" msprop:Generator_ColumnPropNameInTable="OTROS_EGRESOSColumn" msprop:Generator_UserColumnName="OTROS EGRESOS" type="xs:string" minOccurs="0" />
+              <xs:element name="NETO_x0020_A_x0020_RECIBIR" msprop:Generator_ColumnVarNameInTable="columnNETO_A_RECIBIR" msprop:Generator_ColumnPropNameInRow="NETO_A_RECIBIR" msprop:Generator_ColumnPropNameInTable="NETO_A_RECIBIRColumn" msprop:Generator_UserColumnName="NETO A RECIBIR" type="xs:string" minOccurs="0" />
+              <xs:element name="IMPUESTO_x0020_A_x0020_LA_x0020_RENTA" msprop:Generator_ColumnVarNameInTable="columnIMPUESTO_A_LA_RENTA" msprop:Generator_ColumnPropNameInRow="IMPUESTO_A_LA_RENTA" msprop:Generator_ColumnPropNameInTable="IMPUESTO_A_LA_RENTAColumn" msprop:Generator_UserColumnName="IMPUESTO A LA RENTA" type="xs:string" minOccurs="0" />
+              <xs:element name="TOTAL_x0020_EGRESOS" msprop:Generator_ColumnVarNameInTable="columnTOTAL_EGRESOS" msprop:Generator_ColumnPropNameInRow="TOTAL_EGRESOS" msprop:Generator_ColumnPropNameInTable="TOTAL_EGRESOSColumn" msprop:Generator_UserColumnName="TOTAL EGRESOS" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

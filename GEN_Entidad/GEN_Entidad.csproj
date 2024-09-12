@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1F0E00D5-4213-4904-BFD1-7F26FCE61DA7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GEN_Entidad</RootNamespace>
+    <AssemblyName>GEN_Entidad</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Drawing.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v24.1.Core, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entidades\ActivoFijo\clsEAgrupacion.cs" />
+    <Compile Include="Entidades\ActivoFijo\clsEItemActivoFijo.cs" />
+    <Compile Include="Entidades\Administracion\clseItem.cs" />
+    <Compile Include="Entidades\Administracion\clsEMovimientoInventarioAdm.cs" />
+    <Compile Include="Entidades\Administracion\clsEPresentacion.cs" />
+    <Compile Include="Entidades\clsELiquidacion.cs" />
+    <Compile Include="Entidades\clsERubroFijo.cs" />
+    <Compile Include="Entidades\clsEAlimentacion.cs" />
+    <Compile Include="Entidades\clsEDescuentoDiscapacitadoIr.cs" />
+    <Compile Include="Entidades\clsEEnvioCorreo.cs" />
+    <Compile Include="Entidades\clsEEstado.cs" />
+    <Compile Include="Entidades\clsEFeriado.cs" />
+    <Compile Include="Entidades\clsEGeneral.cs" />
+    <Compile Include="Entidades\clsEAccion.cs" />
+    <Compile Include="Entidades\clsEComisionDetalle.cs" />
+    <Compile Include="Entidades\clsEComision.cs" />
+    <Compile Include="Entidades\clsECatalogo.cs" />
+    <Compile Include="Entidades\clsECombo.cs" />
+    <Compile Include="clsEDiccionario.cs" />
+    <Compile Include="Entidades\clsEEmpleadoCargaFamiliar.cs" />
+    <Compile Include="Entidades\clsEEmpleadoContacto.cs" />
+    <Compile Include="Entidades\clsEGestorConsulta.cs" />
+    <Compile Include="Entidades\clsEImpuestoRenta.cs" />
+    <Compile Include="Entidades\clsEImpuestoRentaDeducible.cs" />
+    <Compile Include="Entidades\clsEMaestro.cs" />
+    <Compile Include="Entidades\clsEMenu.cs" />
+    <Compile Include="Entidades\clsEMenuAccionPerfil.cs" />
+    <Compile Include="Entidades\clsEMenuPerfil.cs" />
+    <Compile Include="Entidades\clsEMovimientos.cs" />
+    <Compile Include="Entidades\clsEmpleado.cs" />
+    <Compile Include="Entidades\clsEmpleadoContrato.cs" />
+    <Compile Include="Entidades\clsEmpleadoDocumento.cs" />
+    <Compile Include="Entidades\clsENomina.cs" />
+    <Compile Include="Entidades\clsENominaDetalleDt.cs" />
+    <Compile Include="Entidades\clsENovedadDetalle.cs" />
+    <Compile Include="Entidades\clsEParametro.cs" />
+    <Compile Include="Entidades\clsEPerfil.cs" />
+    <Compile Include="Entidades\clsEPeriodo.cs" />
+    <Compile Include="Entidades\clsEPermisoHoras.cs" />
+    <Compile Include="Entidades\clsEProyeccionImpuestoRenta.cs" />
+    <Compile Include="Entidades\clsESecuencia.cs" />
+    <Compile Include="Entidades\clsESolicitudVacacionValor.cs" />
+    <Compile Include="Entidades\clsEBeneficioSocialDetalle.cs" />
+    <Compile Include="Entidades\clsESpAsistenciaDetalle.cs" />
+    <Compile Include="Entidades\clsESpResumenHorasExtras.cs" />
+    <Compile Include="Entidades\clsETipoPermiso.cs" />
+    <Compile Include="Entidades\clsETransaccion.cs" />
+    <Compile Include="Entidades\clsEUsuario.cs" />
+    <Compile Include="Entidades\clsEUsuarioDepartamentoAsignado.cs" />
+    <Compile Include="Entidades\clsEVacacion.cs" />
+    <Compile Include="Entidades\clsESolicitudVacacionDetalle.cs" />
+    <Compile Include="Entidades\clsESolicitudVacacion.cs" />
+    <Compile Include="Entidades\clsEPersona.cs" />
+    <Compile Include="Entidades\clsEPersonaDireccion.cs" />
+    <Compile Include="Entidades\clsEPlantillaVacacion.cs" />
+    <Compile Include="Entidades\clsEPlantillaUtilidadEmpExterno.cs" />
+    <Compile Include="Entidades\clsEPlantillaComision.cs" />
+    <Compile Include="Entidades\clsEPlantillaProvision.cs" />
+    <Compile Include="Entidades\clsEPlantillaEmpleado.cs" />
+    <Compile Include="Entidades\clsEPermiso.cs" />
+    <Compile Include="Entidades\clsERubro.cs" />
+    <Compile Include="Entidades\clsEEmpleadoPorcentajeMaxComision.cs" />
+    <Compile Include="Entidades\clsERubroTipoRol.cs" />
+    <Compile Include="Entidades\clsESpGeneraPago.cs" />
+    <Compile Include="Entidades\clsESpConsultaNovedad.cs" />
+    <Compile Include="Entidades\clsEFondoReserva.cs" />
+    <Compile Include="Entidades\clsETipoComision.cs" />
+    <Compile Include="Entidades\clsETipoRol.cs" />
+    <Compile Include="Entidades\clsEUtilidadEmpExterno.cs" />
+    <Compile Include="Entidades\clsEUtilidadDetalle.cs" />
+    <Compile Include="Entidades\clsEUtilidad.cs" />
+    <Compile Include="Entidades\clsEvtEmpleados.cs" />
+    <Compile Include="Entidades\Cobranza\clsEClienteComision.cs" />
+    <Compile Include="Entidades\Cobranza\clsEComisiones.cs" />
+    <Compile Include="Entidades\Cobranza\clsESeguimiento.cs" />
+    <Compile Include="Entidades\Compras\clsEBandejaSolicitudCompra.cs" />
+    <Compile Include="Entidades\Compras\clsEBandejaSolicitudCompraUsuario.cs" />
+    <Compile Include="Entidades\Compras\clsECostoPorBulto.cs" />
+    <Compile Include="Entidades\Compras\clsECotizacion.cs" />
+    <Compile Include="Entidades\Compras\clsELiquidacionAnticipo.cs" />
+    <Compile Include="Entidades\Compras\clsELogistica.cs" />
+    <Compile Include="Entidades\Compras\clsEOrdenCompra.cs" />
+    <Compile Include="Entidades\Compras\clsEOrdenPago.cs" />
+    <Compile Include="Entidades\Compras\clsEProveedor.cs" />
+    <Compile Include="Entidades\Compras\clsESolicitudAnticipo.cs" />
+    <Compile Include="Entidades\Compras\clsESolicitudCompra.cs" />
+    <Compile Include="Entidades\Compras\clsESolicitudCompraDetalle.cs" />
+    <Compile Include="Entidades\Compras\clsETipoItems.cs" />
+    <Compile Include="Entidades\Compras\clsEGuiaRemision.cs" />
+    <Compile Include="Entidades\Compras\clsEUsuarioAsignado.cs" />
+    <Compile Include="Entidades\Credito\clsEBandejaInformeRTC.cs" />
+    <Compile Include="Entidades\Credito\clsECheckList.cs" />
+    <Compile Include="Entidades\Credito\clsEInformeRTC.cs" />
+    <Compile Include="Entidades\Credito\clsEPlantillaSeguro.cs" />
+    <Compile Include="Entidades\Credito\clsEProcesoCredito.cs" />
+    <Compile Include="Entidades\Credito\clsERequerimiento.cs" />
+    <Compile Include="Entidades\Credito\clsESolicitudCredito.cs" />
+    <Compile Include="Entidades\General\clsEEnvioSms.cs" />
+    <Compile Include="Entidades\General\clsEPais.cs" />
+    <Compile Include="Entidades\REH\clsEBandejaPermisoHoras.cs" />
+    <Compile Include="Entidades\REH\clsEGestorConsultaPerfil.cs" />
+    <Compile Include="Entidades\REH\clsETipoComisionPermiso.cs" />
+    <Compile Include="Entidades\SHEQ\cleEItemEPP.cs" />
+    <Compile Include="Entidades\SHEQ\clsEActualizacionInventario.cs" />
+    <Compile Include="Entidades\SHEQ\clsEControlCalidad.cs" />
+    <Compile Include="Entidades\SHEQ\clsEEntregaEPP.cs" />
+    <Compile Include="Entidades\SHEQ\clsEInventarioFisico.cs" />
+    <Compile Include="Entidades\SHEQ\clsEMaterialPesoEnvase.cs" />
+    <Compile Include="Entidades\SHEQ\clsEMovimientoInventario.cs" />
+    <Compile Include="Entidades\SHEQ\clsETransferenciaStock.cs" />
+    <Compile Include="Entidades\Ventas\clsECampanaPublicitaria.cs" />
+    <Compile Include="Entidades\Ventas\clsECarteraZonaSAP.cs" />
+    <Compile Include="Entidades\Ventas\clsEFacturaExclusion.cs" />
+    <Compile Include="Entidades\Ventas\clsEGrupoTipoProducto.cs" />
+    <Compile Include="Entidades\Ventas\clsEGrupoItemExclusion.cs" />
+    <Compile Include="Entidades\Ventas\clsEProductoLineaBiologica.cs" />
+    <Compile Include="Entidades\Ventas\clsEVendedores.cs" />
+    <Compile Include="Entidades\Ventas\clsEZonaGrupo.cs" />
+    <Compile Include="Entidades\Ventas\clsEGrupoCliente.cs" />
+    <Compile Include="Entidades\Ventas\clsEPresupuestoKilosLitros.cs" />
+    <Compile Include="Entidades\Ventas\clsEPresupuestoCantidadesItem.cs" />
+    <Compile Include="Entidades\Ventas\clsEPresupuestoVentas.cs" />
+    <Compile Include="Entidades\Ventas\clsEPresupuestoKilosLitrosItem.cs" />
+    <Compile Include="Entidades\Ventas\clsEPresupuestoKilosLitrosGrupo.cs" />
+    <Compile Include="Entidades\Ventas\clsEPresupuestoKilosLitrosFamilia.cs" />
+    <Compile Include="Entidades\Ventas\clsEPresupuestoRebate.cs" />
+    <Compile Include="Entidades\Ventas\clsERebate.cs" />
+    <Compile Include="Entidades\Ventas\clsEVtaParametro.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

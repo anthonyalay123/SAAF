@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsMovimientos" targetNamespace="http://tempuri.org/dsMovimientos.xsd" xmlns:mstns="http://tempuri.org/dsMovimientos.xsd" xmlns="http://tempuri.org/dsMovimientos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsMovimientos" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsMovimientos" msprop:Generator_UserDSName="dsMovimientos">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SaldoMovimiento" msprop:Generator_TableClassName="SaldoMovimientoDataTable" msprop:Generator_TableVarName="tableSaldoMovimiento" msprop:Generator_TablePropName="SaldoMovimiento" msprop:Generator_RowDeletingName="SaldoMovimientoRowDeleting" msprop:Generator_RowChangingName="SaldoMovimientoRowChanging" msprop:Generator_RowEvHandlerName="SaldoMovimientoRowChangeEventHandler" msprop:Generator_RowDeletedName="SaldoMovimientoRowDeleted" msprop:Generator_UserTableName="SaldoMovimiento" msprop:Generator_RowChangedName="SaldoMovimientoRowChanged" msprop:Generator_RowEvArgName="SaldoMovimientoRowChangeEvent" msprop:Generator_RowClassName="SaldoMovimientoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Empleado" msprop:Generator_ColumnVarNameInTable="columnEmpleado" msprop:Generator_ColumnPropNameInRow="Empleado" msprop:Generator_ColumnPropNameInTable="EmpleadoColumn" msprop:Generator_UserColumnName="Empleado" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoMovimiento" msprop:Generator_ColumnVarNameInTable="columnTipoMovimiento" msprop:Generator_ColumnPropNameInRow="TipoMovimiento" msprop:Generator_ColumnPropNameInTable="TipoMovimientoColumn" msprop:Generator_UserColumnName="TipoMovimiento" type="xs:string" minOccurs="0" />
+              <xs:element name="SaldoPlanilla" msprop:Generator_ColumnVarNameInTable="columnSaldoPlanilla" msprop:Generator_ColumnPropNameInRow="SaldoPlanilla" msprop:Generator_ColumnPropNameInTable="SaldoPlanillaColumn" msprop:Generator_UserColumnName="SaldoPlanilla" type="xs:string" minOccurs="0" />
+              <xs:element name="ValorDescontar" msprop:Generator_ColumnVarNameInTable="columnValorDescontar" msprop:Generator_ColumnPropNameInRow="ValorDescontar" msprop:Generator_ColumnPropNameInTable="ValorDescontarColumn" msprop:Generator_UserColumnName="ValorDescontar" type="xs:string" minOccurs="0" />
+              <xs:element name="Saldo" msprop:Generator_ColumnVarNameInTable="columnSaldo" msprop:Generator_ColumnPropNameInRow="Saldo" msprop:Generator_ColumnPropNameInTable="SaldoColumn" msprop:Generator_UserColumnName="Saldo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

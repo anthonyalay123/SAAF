@@ -1,0 +1,1148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0D1F1D30-6202-4677-B850-7F9BC4464A83}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>REH_Dato</RootNamespace>
+    <AssemblyName>REH_Dato</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.5\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.14.0.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.14.0\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.1.11\lib\net46\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.1.11\lib\net46\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.26.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.26\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.26\lib\net452\Ubiety.Dns.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Zstandard.Net, Version=1.1.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.26\lib\net452\Zstandard.Net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADMMBODEGA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADMMITEM.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADMMPRESENTACION.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADMPSTOCK.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADMTMOVIMIENTOINVENTARIO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADMTMOVIMIENTOINVENTARIODETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AFILITEMACTIVOFIJOHISTORICO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AFIPAGRUPACION.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AFIPITEMACTIVOFIJO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AFIPITEMACTIVOFIJOHISTORICO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AFIPTIPOACTIVOFIJO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AFITACTIVOFIJO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AFITMOVIMIENTOACTIVOFIJO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="clsDBase.cs" />
+    <Compile Include="clsMySql.cs" />
+    <Compile Include="COBPCLIENTECAMBIOZONA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COBPCLIENTECOMISION.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COBPCLIENTECOMISIONDETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COBPCLIENTEPAGOASEGURADORA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COBPCOMISIONES.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COBPDIANOLABORABLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COBPDIANOLABORABLEZONA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COBPDIASNOLABORABLES.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COBPEMPLEADOCODIGOCOMISION.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COBPEMPLEADOCODIGOCOMISION_bck.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COBPEMPLEADOZONASAP.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COBPEMPLEADOZONASAP_bck.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COBPFACTURACOMISION.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COBPFACTURACOMISIONDETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COBPNOAPLICAFACTURACOMISION.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COBPNOAPLICANUMDOCPAGOCOMISION.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COBPPARAMETRO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COBPTOLERANCIACONTADO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COBPVENDEDOR.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COBPZONADIASDOCUMENTO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COBPZONADIASDOCUMENTODETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COBTCOMISIONES.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COBTCOMISIONESDETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COBTCOMISIONESEMPLEADO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COBTCOMISIONESEXCEPCIONDIASDOC.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COBTCOMISIONESEXCEPCIONES.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COBTSEGUIMIENTOCOMPROMISO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COMMPROVEEDORES.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COMMPROVEEDORESCUENTABANC.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COMPCOSTOPORBULTO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COMPGRUPOPAGOS.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COMPPARAMETRO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COMPTIPOITEMS.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COMTCOTIZACION.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COMTCOTIZACIONGANADORA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COMTCOTIZACIONPROVEEDOR.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COMTCOTIZACIONPROVEEDORADJUNTO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COMTCOTIZACIONPROVEEDORDETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COMTCOTIZACIONSOLICITUDCOMPRA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COMTFACTURAPAGO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COMTGUIAREMISION.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COMTGUIAREMISIONADJUNTO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COMTGUIAREMISIONDETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COMTGUIAREMISIONFACTURA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COMTLIQUIDACIONANTICIPO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COMTLIQUIDACIONANTICIPODETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COMTLIQUIDACIONANTICIPOSOLICITUD.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COMTLOGISTICA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COMTORDENCOMPRA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COMTORDENCOMPRACOTIZACION.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COMTORDENCOMPRAPROVEEDOR.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COMTORDENCOMPRAPROVEEDORITEM.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COMTORDENPAGO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COMTORDENPAGOADJUNTO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COMTORDENPAGOFACTOCP.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COMTORDENPAGOFACTURA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COMTSEMANAPAGOS.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COMTSOLICITUDANTICIPO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COMTSOLICITUDCOMPRA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COMTSOLICITUDCOMPRAADJUNTO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COMTSOLICITUDCOMPRADETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRELCHECKLIST.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CREMCHECKLIST.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CREPCHECKLIST.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CREPPARAMETRO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRETINFORMERTC.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRETINFORMERTCCLIENTES.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRETINFORMERTCCROQUIS.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRETINFORMERTCCULTIVOS.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRETINFORMERTCDOCUMENTOSPENDIENTES.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRETINFORMERTCPRODUCTOS.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRETINFORMERTCPROVEEDOR.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRETPLANTILLASEGURO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRETPROCESOCREDITO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRETPROCESOCREDITOACCIONISTA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRETPROCESOCREDITOADJUNTO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRETPROCESOCREDITOADMACTUAL.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRETPROCESOCREDITOBURO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRETPROCESOCREDITOCEDULA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRETPROCESOCREDITODETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRETPROCESOCREDITOFUNCIONJUDICIAL.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRETPROCESOCREDITONOMBRAMIENTO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRETPROCESOCREDITOOTROSACTIVOS.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRETPROCESOCREDITOPROPIEDADES.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRETPROCESOCREDITOREFBANCARIA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRETPROCESOCREDITOREFCOMERCIAL.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRETPROCESOCREDITORESOLUCIONADJUNTO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRETPROCESOCREDITOREVISION.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRETPROCESOCREDITORUC.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRETPROCESOCREDITORUCDIRECCION.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRETPROCESOCREDITOSRI.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRETSOLICITUDCREDITO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRETSOLICITUDCREDITODIRECCION.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRETSOLICITUDCREDITONOMBRAMIENTO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRETSOLICITUDCREDITOOTROSACTIVOS.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRETSOLICITUDCREDITOPROPIEDADES.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRETSOLICITUDCREDITOREFBANCARIA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRETSOLICITUDCREDITOREFCOMERCIAL.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRETSOLICITUDCREDITOREFPERSONAL.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRMPCATEGORIA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRMPITEM.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="edmSAAF.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>edmSAAF.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="edmSAAF.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="edmSAAF.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>edmSAAF.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="GENLAUDITORIA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENLCOSTOPRODUCTO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENLENVIOCORREO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENLENVIOSMS.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENLPERSONA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENLPERSONAHISTORIAL.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENMCATALOGO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENMCATALOGODEPARTAMENTO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENMCENTROCOSTO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENMDEPARTAMENTO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENMESTADO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENMESTADOCIVIL.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENMFERIADO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENMFORMAPAGO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENMGENERO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENMNACIONALIDAD.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENMPERSONA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENMPERSONACAPACITACION.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENMPERSONADIRECCION.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENMPERSONAEDUCACION.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENMPERSONAFICHAMEDICA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENMPERSONAFICHAMEDICAADJUNTO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENMTIPOCUENTABANCARIA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENMTIPOIDENTIFICACION.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENPACCION.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENPCANTON.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENPENVIOCORREO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENPGESTORCONSULTAPERFIL.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENPMENU.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENPMENUACCION.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENPMENUACCIONPERFIL.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENPMENUPERFIL.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENPPAIS.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENPPARAMETRO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENPPARROQUIA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENPPERFIL.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENPPERFILFLUJO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENPPROVINCIA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENPRIBBONFAVORITOS.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENPRUBROCENTROCOSTOCC.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENPSECUENCIA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENPTIPOBSCENTROCOSTOCC.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENPTIPOTRANSPORTEALMACENCC.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENPTIPOTRANSPORTEZONACC.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GENPTRANSACCION.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IMPUESTORENTA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="logaceptarol.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LogEnvioCorreoRolPago.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="REHLASISTENCIADETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHLDECIMOCUARTO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHLDECIMOTERCERO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHLEMPLEADO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHLEMPLEADOCONTRATO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHLIMPUESTORENTA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHLMOVIMIENTO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHLNOMINAPAGO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHLNOMINAPAGODETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHLRDEP.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHLVACACION.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHLVACACIONEMPLEADO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHLVACACIONHISTORIAL.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHMCARGOLABORAL.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHMGESTORCONSULTA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHMGESTORCONSULTADETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHMTIPOCOMISION.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHMTIPOCONTRATO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHMTIPOROL.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHMTIPORUBRO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHPDEDUCCIONIMPUESTORENTACARGAS.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHPDESCUENTODISCAPACITADOIR.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHPEMPLEADO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHPEMPLEADOCARGAFAMILIAR.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHPEMPLEADOCONTACTO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHPEMPLEADOCONTRATO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHPEMPLEADOCONTRATOCUENTABANC.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHPEMPLEADOCONTRATOMAXPORCCOMISION.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHPEMPLEADODOCUMENTO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHPGRUPOCOMISION.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHPIMPUESTORENTA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHPIMPUESTORENTACREDTRIB.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHPMOTIVOFINCONTRATO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHPMOVIMIENTOTIPOROLRUBRO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHPMOVIMIENTOTIPOROLRUBROEMPLEADO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHPPERIODO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHPPERIODOSUELDOBASICO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHPPERMISO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHPPERMISOHORAS.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHPREPORTE107.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHPREPORTENOVEDADES.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHPREPORTENOVEDADESDETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHPRUBRO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHPRUBROFIJO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHPRUBROTIPOROL.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHPSECUENCIAPAGO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHPTIPOCOMISIONPERMISO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHPTIPOPERMISO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTAJUSTEPROVISION.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTALIMENTACION.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTALIMENTACIONDETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTASISTENCIA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTASISTENCIADETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTBENEFICIOSOCIALAJUSTE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTBENEFICIOSOCIALDETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTCOMISION.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTCOMISIONDETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTFONDORESERVA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTFONDORESERVADETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTHORASEXTRAS.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTHORASEXTRASDETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTIMPUESTORENTA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTIMPUESTORENTADEDUCIBLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTLIQUIDACION.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTLIQUIDACIONDETALLEBS.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTLIQUIDACIONDETALLEROL.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTLIQUIDACIONDETALLEVAC.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTLIQUIDACIONRESUMEN.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTLIQUIDACIONROLCOMISIONES.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTLIQUIDACIONRUBROMANUAL.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTMOVIMIENTO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTMPCONSOLIDADOIESS.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTMPVACACION.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTNOMINA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTNOMINACONSOLIDADO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTNOMINADETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTNOMINAEMPLEADO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTNOVEDAD.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTNOVEDADDETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTPERMISOS.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTPRESTAMOINTERNO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTPRESTAMOINTERNODETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTPROYECCIONIMPUESTORENTA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTSOLICITUDVACACION.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTSOLICITUDVACACIONDETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTSOLICITUDVACACIONSALDOS.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTSOLICITUDVACACIONVALOR.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTTRANSACCIONAUTOIZACION.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTUTILIDAD.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTUTILIDADDETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTUTILIDADEMPEXTERNO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTUTILIDADESEMPLEADO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTVACACION.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTVACACIONDETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHTVACACION_BCK.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHVTEMPLEADOS.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHVTPERSONACONTRATO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHVTPERSONACONTRATOUSUARIO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHVTPERSONASCONTRATODEPTOMEDICO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REHVTSALDOMOVIMIENTO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SEGMUSUARIO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SEGPUSUARIOAPROBACION.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SEGPUSUARIOAPROBACIONEXCEPCION.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SEGPUSUARIOASIGNADO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SEGPUSUARIOASIGNADOPERFILMENU.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SEGPUSUARIOASIGNADOSAP.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SEGPUSUARIODEPARTAMENTOASIGNADO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SEGPUSUARIOELIMINAAPROBADAS.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SEGPUSUARIOPERSONAASIGNADO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SEGPUSUARIOPERSONAASIGNADOPERFILMENU.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SEGPUSUARIOTIPOORDENPAGO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SHEMBODEGAEPP.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SHEMGLOSARIODEFECTOS.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SHEMITEMEPP.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SHEPMATERIALPESOENVASE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SHEPSTOCKEPP.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SHETACTUALIZACIONINVENTARIO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SHETACTUALIZACIONINVENTARIODETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SHETCONTROLCALIDAD.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SHETCONTROLCALIDADDETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SHETENTREGAEPP.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SHETENTREGAEPPDETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SHETMOVIMIENTOINVENTARIO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SHETMOVIMIENTOINVENTARIODETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SHETTRANSFERENCIASTOCK.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SHETTRANSFERENCIASTOCKDETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMP.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMPFACTCOBROS.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMPNOMDETFIN.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMPNOMINADETSIM.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMP_DATOS.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMP_DATOS_VAC.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMP_DATOS_VAC_EMP.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTAGRUPOCLIENTE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTAGRUPOCLIENTEDETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTALREBATECLIENTEANUALDETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTALREBATECLIENTEDETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTAPCAMPANAPUBLICITARIA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTAPCAMPANAPUBLICITARIAADJUNTO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTAPCAMPANAPUBLICITARIACUERPO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTAPCAMPANAPUBLICITARIADESTINATARIO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTAPCARTERAZONASAPENVIOCORREO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTAPFACTURAEXCLUSION.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTAPGRUPOITEMEXCLUSION.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTAPGRUPOITEMEXCLUSIONDETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTAPGRUPOITEMTIPOPRODUCTO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTAPGRUPOITEMTIPOPRODUCTOSAAF.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTAPPARAMETRO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTAPPRESUPUESTOCANTIDADESPRODUCTO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTAPPRESUPUESTOKILOSLITROS.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTAPPRESUPUESTOKILOSLITROSFAMILIA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTAPPRESUPUESTOKILOSLITROSGRUPO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTAPPRESUPUESTOKILOSLITROSPRODUCTO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTAPPRESUPUESTOREBATE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTAPPRESUPUESTOREBATEGC.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTAPPRESUPUESTOVENTAS.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTAPPRESUPUESTOVENTASINTERNO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTAPPRODUCTOLINEABIOLOGICA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTAPVENDEDORGRUPO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTAPVENDEDORGRUPODETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTAPZONAGRUPO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTAPZONAGRUPODETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTAPZONAGRUPOENVIOCORREO.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTATREBATECLIENTE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTATREBATECLIENTEANUAL.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTATREBATECLIENTEANUALDETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTATREBATECLIENTEDETALLE.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTAVTCLIENTEVENDEDORZONA.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTPCLIENTEVENDEDOR.cs">
+      <DependentUpon>edmSAAF.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="edmSAAF.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>edmSAAF.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="edmSAAF.edmx.diagram">
+      <DependentUpon>edmSAAF.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="edmSAAF.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>edmSAAF.Context.cs</LastGenOutput>
+      <DependentUpon>edmSAAF.edmx</DependentUpon>
+    </Content>
+    <Content Include="edmSAAF.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>edmSAAF.edmx</DependentUpon>
+      <LastGenOutput>edmSAAF.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GEN_Conexion\GEN_Conexion.csproj">
+      <Project>{A8D470AF-D123-42F7-8173-6561C7A517CC}</Project>
+      <Name>GEN_Conexion</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

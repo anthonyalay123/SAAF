@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsComisiones" targetNamespace="http://tempuri.org/dsComisiones.xsd" xmlns:mstns="http://tempuri.org/dsComisiones.xsd" xmlns="http://tempuri.org/dsComisiones.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsComisiones" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsComisiones" msprop:Generator_UserDSName="dsComisiones">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Comisiones" msprop:Generator_TableClassName="ComisionesDataTable" msprop:Generator_TableVarName="tableComisiones" msprop:Generator_TablePropName="Comisiones" msprop:Generator_RowDeletingName="ComisionesRowDeleting" msprop:Generator_RowChangingName="ComisionesRowChanging" msprop:Generator_RowEvHandlerName="ComisionesRowChangeEventHandler" msprop:Generator_RowDeletedName="ComisionesRowDeleted" msprop:Generator_UserTableName="Comisiones" msprop:Generator_RowChangedName="ComisionesRowChanged" msprop:Generator_RowEvArgName="ComisionesRowChangeEvent" msprop:Generator_RowClassName="ComisionesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TipoComision" msprop:Generator_ColumnVarNameInTable="columnTipoComision" msprop:Generator_ColumnPropNameInRow="TipoComision" msprop:Generator_ColumnPropNameInTable="TipoComisionColumn" msprop:Generator_UserColumnName="TipoComision" type="xs:string" minOccurs="0" />
+              <xs:element name="Cedula" msprop:Generator_ColumnVarNameInTable="columnCedula" msprop:Generator_ColumnPropNameInRow="Cedula" msprop:Generator_ColumnPropNameInTable="CedulaColumn" msprop:Generator_UserColumnName="Cedula" type="xs:string" minOccurs="0" />
+              <xs:element name="Empleado" msprop:Generator_ColumnVarNameInTable="columnEmpleado" msprop:Generator_ColumnPropNameInRow="Empleado" msprop:Generator_ColumnPropNameInTable="EmpleadoColumn" msprop:Generator_UserColumnName="Empleado" type="xs:string" minOccurs="0" />
+              <xs:element name="Dias" msprop:Generator_ColumnVarNameInTable="columnDias" msprop:Generator_ColumnPropNameInRow="Dias" msprop:Generator_ColumnPropNameInTable="DiasColumn" msprop:Generator_UserColumnName="Dias" type="xs:string" minOccurs="0" />
+              <xs:element name="ValorComision" msprop:Generator_ColumnVarNameInTable="columnValorComision" msprop:Generator_ColumnPropNameInRow="ValorComision" msprop:Generator_ColumnPropNameInTable="ValorComisionColumn" msprop:Generator_UserColumnName="ValorComision" type="xs:string" minOccurs="0" />
+              <xs:element name="ValorComisionAdicional" msprop:Generator_ColumnVarNameInTable="columnValorComisionAdicional" msprop:Generator_ColumnPropNameInRow="ValorComisionAdicional" msprop:Generator_ColumnPropNameInTable="ValorComisionAdicionalColumn" msprop:Generator_UserColumnName="ValorComisionAdicional" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalComision" msprop:Generator_ColumnVarNameInTable="columnTotalComision" msprop:Generator_ColumnPropNameInRow="TotalComision" msprop:Generator_ColumnPropNameInTable="TotalComisionColumn" msprop:Generator_UserColumnName="TotalComision" type="xs:string" minOccurs="0" />
+              <xs:element name="OtrosIngresosIess" msprop:Generator_ColumnVarNameInTable="columnOtrosIngresosIess" msprop:Generator_ColumnPropNameInRow="OtrosIngresosIess" msprop:Generator_ColumnPropNameInTable="OtrosIngresosIessColumn" msprop:Generator_UserColumnName="OtrosIngresosIess" type="xs:string" minOccurs="0" />
+              <xs:element name="AporteIESS" msprop:Generator_ColumnVarNameInTable="columnAporteIESS" msprop:Generator_ColumnPropNameInRow="AporteIESS" msprop:Generator_ColumnPropNameInTable="AporteIESSColumn" msprop:Generator_UserColumnName="AporteIESS" type="xs:string" minOccurs="0" />
+              <xs:element name="NetoRecibir" msprop:Generator_ColumnVarNameInTable="columnNetoRecibir" msprop:Generator_ColumnPropNameInRow="NetoRecibir" msprop:Generator_ColumnPropNameInTable="NetoRecibirColumn" msprop:Generator_UserColumnName="NetoRecibir" type="xs:string" minOccurs="0" />
+              <xs:element name="Prestamos" msprop:Generator_ColumnVarNameInTable="columnPrestamos" msprop:Generator_ColumnPropNameInRow="Prestamos" msprop:Generator_ColumnPropNameInTable="PrestamosColumn" msprop:Generator_UserColumnName="Prestamos" type="xs:string" minOccurs="0" />
+              <xs:element name="PorcentajeComision" msprop:Generator_ColumnVarNameInTable="columnPorcentajeComision" msprop:Generator_ColumnPropNameInRow="PorcentajeComision" msprop:Generator_ColumnPropNameInTable="PorcentajeComisionColumn" msprop:Generator_UserColumnName="PorcentajeComision" type="xs:string" minOccurs="0" />
+              <xs:element name="PorcentajeComisionAdicional" msprop:Generator_ColumnVarNameInTable="columnPorcentajeComisionAdicional" msprop:Generator_ColumnPropNameInRow="PorcentajeComisionAdicional" msprop:Generator_ColumnPropNameInTable="PorcentajeComisionAdicionalColumn" msprop:Generator_UserColumnName="PorcentajeComisionAdicional" type="xs:string" minOccurs="0" />
+              <xs:element name="PorcentajeTotal" msprop:Generator_ColumnVarNameInTable="columnPorcentajeTotal" msprop:Generator_ColumnPropNameInRow="PorcentajeTotal" msprop:Generator_ColumnPropNameInTable="PorcentajeTotalColumn" msprop:Generator_UserColumnName="PorcentajeTotal" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

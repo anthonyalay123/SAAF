@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsRolComisiones" targetNamespace="http://tempuri.org/dsRolComisiones.xsd" xmlns:mstns="http://tempuri.org/dsRolComisiones.xsd" xmlns="http://tempuri.org/dsRolComisiones.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsRolComisiones" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsRolComisiones" msprop:Generator_UserDSName="dsRolComisiones">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Comisiones" msprop:Generator_TableClassName="ComisionesDataTable" msprop:Generator_TableVarName="tableComisiones" msprop:Generator_TablePropName="Comisiones" msprop:Generator_RowDeletingName="ComisionesRowDeleting" msprop:Generator_RowChangingName="ComisionesRowChanging" msprop:Generator_RowEvHandlerName="ComisionesRowChangeEventHandler" msprop:Generator_RowDeletedName="ComisionesRowDeleted" msprop:Generator_UserTableName="Comisiones" msprop:Generator_RowChangedName="ComisionesRowChanged" msprop:Generator_RowEvArgName="ComisionesRowChangeEvent" msprop:Generator_RowClassName="ComisionesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EMPLEADO" msprop:Generator_ColumnVarNameInTable="columnEMPLEADO" msprop:Generator_ColumnPropNameInRow="EMPLEADO" msprop:Generator_ColumnPropNameInTable="EMPLEADOColumn" msprop:Generator_UserColumnName="EMPLEADO" type="xs:string" minOccurs="0" />
+              <xs:element name="DEPARTAMENTO" msprop:Generator_ColumnVarNameInTable="columnDEPARTAMENTO" msprop:Generator_ColumnPropNameInRow="DEPARTAMENTO" msprop:Generator_ColumnPropNameInTable="DEPARTAMENTOColumn" msprop:Generator_UserColumnName="DEPARTAMENTO" type="xs:string" minOccurs="0" />
+              <xs:element name="CARGO" msprop:Generator_ColumnVarNameInTable="columnCARGO" msprop:Generator_ColumnPropNameInRow="CARGO" msprop:Generator_ColumnPropNameInTable="CARGOColumn" msprop:Generator_UserColumnName="CARGO" type="xs:string" minOccurs="0" />
+              <xs:element name="VALOR" msprop:Generator_ColumnVarNameInTable="columnVALOR" msprop:Generator_ColumnPropNameInRow="VALOR" msprop:Generator_ColumnPropNameInTable="VALORColumn" msprop:Generator_UserColumnName="VALOR" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

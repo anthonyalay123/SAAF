@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsIItemTransferencia" targetNamespace="http://tempuri.org/dsIItemTransferencia.xsd" xmlns:mstns="http://tempuri.org/dsIItemTransferencia.xsd" xmlns="http://tempuri.org/dsIItemTransferencia.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsIItemTransferencia" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsIItemTransferencia" msprop:Generator_UserDSName="dsIItemTransferencia">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SHETRANSFERENCIASTOCK" msprop:Generator_TableClassName="SHETRANSFERENCIASTOCKDataTable" msprop:Generator_TableVarName="tableSHETRANSFERENCIASTOCK" msprop:Generator_RowChangedName="SHETRANSFERENCIASTOCKRowChanged" msprop:Generator_TablePropName="SHETRANSFERENCIASTOCK" msprop:Generator_RowDeletingName="SHETRANSFERENCIASTOCKRowDeleting" msprop:Generator_RowChangingName="SHETRANSFERENCIASTOCKRowChanging" msprop:Generator_RowEvHandlerName="SHETRANSFERENCIASTOCKRowChangeEventHandler" msprop:Generator_RowDeletedName="SHETRANSFERENCIASTOCKRowDeleted" msprop:Generator_RowClassName="SHETRANSFERENCIASTOCKRow" msprop:Generator_UserTableName="SHETRANSFERENCIASTOCK" msprop:Generator_RowEvArgName="SHETRANSFERENCIASTOCKRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BodegaOrigen" msprop:Generator_ColumnVarNameInTable="columnBodegaOrigen" msprop:Generator_ColumnPropNameInRow="BodegaOrigen" msprop:Generator_ColumnPropNameInTable="BodegaOrigenColumn" msprop:Generator_UserColumnName="BodegaOrigen" type="xs:string" minOccurs="0" />
+              <xs:element name="BodegaDestino" msprop:Generator_ColumnVarNameInTable="columnBodegaDestino" msprop:Generator_ColumnPropNameInRow="BodegaDestino" msprop:Generator_ColumnPropNameInTable="BodegaDestinoColumn" msprop:Generator_UserColumnName="BodegaDestino" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaTrasferencia" msprop:Generator_ColumnVarNameInTable="columnFechaTrasferencia" msprop:Generator_ColumnPropNameInRow="FechaTrasferencia" msprop:Generator_ColumnPropNameInTable="FechaTrasferenciaColumn" msprop:Generator_UserColumnName="FechaTrasferencia" type="xs:string" minOccurs="0" />
+              <xs:element name="Motivo" msprop:Generator_ColumnVarNameInTable="columnMotivo" msprop:Generator_ColumnPropNameInRow="Motivo" msprop:Generator_ColumnPropNameInTable="MotivoColumn" msprop:Generator_UserColumnName="Motivo" type="xs:string" minOccurs="0" />
+              <xs:element name="Observaciones" msprop:Generator_ColumnVarNameInTable="columnObservaciones" msprop:Generator_ColumnPropNameInRow="Observaciones" msprop:Generator_ColumnPropNameInTable="ObservacionesColumn" msprop:Generator_UserColumnName="Observaciones" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SHETRANSFERENCIASTOCKDETALLE" msprop:Generator_TableClassName="SHETRANSFERENCIASTOCKDETALLEDataTable" msprop:Generator_TableVarName="tableSHETRANSFERENCIASTOCKDETALLE" msprop:Generator_RowChangedName="SHETRANSFERENCIASTOCKDETALLERowChanged" msprop:Generator_TablePropName="SHETRANSFERENCIASTOCKDETALLE" msprop:Generator_RowDeletingName="SHETRANSFERENCIASTOCKDETALLERowDeleting" msprop:Generator_RowChangingName="SHETRANSFERENCIASTOCKDETALLERowChanging" msprop:Generator_RowEvHandlerName="SHETRANSFERENCIASTOCKDETALLERowChangeEventHandler" msprop:Generator_RowDeletedName="SHETRANSFERENCIASTOCKDETALLERowDeleted" msprop:Generator_RowClassName="SHETRANSFERENCIASTOCKDETALLERow" msprop:Generator_UserTableName="SHETRANSFERENCIASTOCKDETALLE" msprop:Generator_RowEvArgName="SHETRANSFERENCIASTOCKDETALLERowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodigoItem" msprop:Generator_ColumnVarNameInTable="columnCodigoItem" msprop:Generator_ColumnPropNameInRow="CodigoItem" msprop:Generator_ColumnPropNameInTable="CodigoItemColumn" msprop:Generator_UserColumnName="CodigoItem" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionItem" msprop:Generator_ColumnVarNameInTable="columnDescripcionItem" msprop:Generator_ColumnPropNameInRow="DescripcionItem" msprop:Generator_ColumnPropNameInTable="DescripcionItemColumn" msprop:Generator_UserColumnName="DescripcionItem" type="xs:string" minOccurs="0" />
+              <xs:element name="Cantidad" msprop:Generator_ColumnVarNameInTable="columnCantidad" msprop:Generator_ColumnPropNameInRow="Cantidad" msprop:Generator_ColumnPropNameInTable="CantidadColumn" msprop:Generator_UserColumnName="Cantidad" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

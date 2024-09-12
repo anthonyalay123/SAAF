@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsKilosLitros" targetNamespace="http://tempuri.org/dsKilosLitros.xsd" xmlns:mstns="http://tempuri.org/dsKilosLitros.xsd" xmlns="http://tempuri.org/dsKilosLitros.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsKilosLitros" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsKilosLitros" msprop:Generator_UserDSName="dsKilosLitros">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="KilosLitros" msprop:Generator_TableClassName="KilosLitrosDataTable" msprop:Generator_TableVarName="tableKilosLitros" msprop:Generator_RowChangedName="KilosLitrosRowChanged" msprop:Generator_TablePropName="KilosLitros" msprop:Generator_RowDeletingName="KilosLitrosRowDeleting" msprop:Generator_RowChangingName="KilosLitrosRowChanging" msprop:Generator_RowEvHandlerName="KilosLitrosRowChangeEventHandler" msprop:Generator_RowDeletedName="KilosLitrosRowDeleted" msprop:Generator_RowClassName="KilosLitrosRow" msprop:Generator_UserTableName="KilosLitros" msprop:Generator_RowEvArgName="KilosLitrosRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Zona" msprop:Generator_ColumnVarNameInTable="columnZona" msprop:Generator_ColumnPropNameInRow="Zona" msprop:Generator_ColumnPropNameInTable="ZonaColumn" msprop:Generator_UserColumnName="Zona" type="xs:string" minOccurs="0" />
+              <xs:element name="Familia" msprop:Generator_ColumnVarNameInTable="columnFamilia" msprop:Generator_ColumnPropNameInRow="Familia" msprop:Generator_ColumnPropNameInTable="FamiliaColumn" msprop:Generator_UserColumnName="Familia" type="xs:string" minOccurs="0" />
+              <xs:element name="Grupo" msprop:Generator_ColumnVarNameInTable="columnGrupo" msprop:Generator_ColumnPropNameInRow="Grupo" msprop:Generator_ColumnPropNameInTable="GrupoColumn" msprop:Generator_UserColumnName="Grupo" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0023_Presupuesto" msprop:Generator_ColumnVarNameInTable="_column_Presupuesto" msprop:Generator_ColumnPropNameInRow="__Presupuesto" msprop:Generator_ColumnPropNameInTable="__PresupuestoColumn" msprop:Generator_UserColumnName="#Presupuesto" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0023_Ventas_x0020_Lts-Kgs" msprop:Generator_ColumnVarNameInTable="_column_Ventas_Lts_Kgs" msprop:Generator_ColumnPropNameInRow="__Ventas_Lts_Kgs" msprop:Generator_ColumnPropNameInTable="__Ventas_Lts_KgsColumn" msprop:Generator_UserColumnName="#Ventas Lts-Kgs" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0025__x0020_Cumplimiento" msprop:Generator_ColumnVarNameInTable="_column__Cumplimiento" msprop:Generator_ColumnPropNameInRow="___Cumplimiento" msprop:Generator_ColumnPropNameInTable="___CumplimientoColumn" msprop:Generator_UserColumnName="% Cumplimiento" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

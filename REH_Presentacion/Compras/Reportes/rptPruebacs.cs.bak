@@ -1,0 +1,135 @@
+﻿using System;
+using System.Drawing;
+using System.Collections;
+using System.ComponentModel;
+using DevExpress.XtraReports.UI;
+using COM_Negocio;
+
+namespace REH_Presentacion.Compras.Reportes
+{
+    public partial class rptPruebacs : DevExpress.XtraReports.UI.XtraReport
+    {
+        public rptPruebacs()
+        {
+            InitializeComponent();
+        }
+
+        private void rptPruebacs_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        {
+            string dataMember = ""; string Color = ""; string backColor = "";
+            bool useStyles = false;
+            var dt = new clsNCotizacion().goConsultaDataTable(string.Format("EXEC COMSPCONSULTAPIVOTPROVEEDOR {0}", 2));
+
+            DetailBand detail = Detail;
+            //this.Bands.Add(detail);
+            detail.HeightF = 0;
+
+            // Creating Header and Detail Tables
+            XRTable headerTable = new XRTable();
+            this.Bands[BandKind.ReportHeader].Controls.Add(headerTable);
+            //this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            //headerTable});
+
+            XRTable detailTable = new XRTable();
+            detail.Controls.Add(detailTable);
+
+            detailTable.BeginInit();
+            headerTable.BeginInit();
+
+            XRTableRow headerRow = new XRTableRow();
+            headerTable.Rows.Add(headerRow);
+
+            XRTableRow detailRow = new XRTableRow();
+            detailTable.Rows.Add(detailRow);
+
+            int colCount = dt.Columns.Count;
+
+            int pageWidth = (this.PageWidth - (this.Margins.Left + this.Margins.Right));
+            float colWidth = pageWidth / colCount;
+            //Creating an XRTableCell for each column in the corresponding DataTable
+            for (int i = 0; i < colCount; i++)
+            {
+                XRTableCell headerCell = new XRTableCell();
+                headerRow.Cells.Add(headerCell);
+                headerCell.WidthF = colWidth;
+                headerCell.Text = dt.Columns[i].Caption;
+                headerCell.Borders = DevExpress.XtraPrinting.BorderSide.All;
+
+                XRTableCell detailCell = new XRTableCell();
+                detailRow.Cells.Add(detailCell);
+                detailCell.WidthF = colWidth;
+                string actualDM = string.Empty;
+                if (dataMember == string.Empty)
+                    actualDM = dt.Columns[i].Caption;
+                else
+                    actualDM = string.Format("{0}.{1}", dataMember, dt.Columns[i].Caption);
+                detailCell.DataBindings.Add("Text", null, actualDM);
+                detailCell.Borders = DevExpress.XtraPrinting.BorderSide.All;
+            }
+
+            headerTable.EndInit();
+            detailTable.EndInit();
+
+            headerTable.LocationF = new PointF(0, this.Bands[BandKind.ReportHeader].HeightF);
+            headerTable.WidthF = pageWidth;
+            headerTable.Font = new Font(headerTable.Font, FontStyle.Bold);
+
+            detailTable.LocationF = new PointF(0, 0);
+            detailTable.WidthF = pageWidth;
+            //detailTable.BackColor = backColor;
+            //Applying styles if necessary
+            if (useStyles)
+            {
+                detailTable.EvenStyleName = "EvenStyle";
+                detailTable.OddStyleName = "OddStyle";
+            }
+
+
+            /*
+            XRTable xrTable1 = new XRTable();
+            XRTableRow xrTableRow1 = new XRTableRow();
+
+            xrTable1.BeginInit();
+
+            this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            xrTable1});
+            this.Detail.HeightF = 14.99999F;
+            this.Detail.Name = "Detail";
+            this.Detail.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.Detail.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+
+            xrTable1.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top)
+           | DevExpress.XtraPrinting.BorderSide.Right)
+           | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            xrTable1.Font = new System.Drawing.Font("Times New Roman", 7.5F);
+            xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 0F);
+            xrTable1.Name = "xrTable1";
+
+            XRTableCell headerCell = new XRTableCell();
+            xrTableRow1.Cells.Add(headerCell);
+            headerCell.WidthF = 10;
+            headerCell.Text = "cab";
+            headerCell.Borders = DevExpress.XtraPrinting.BorderSide.All;
+
+            XRTableCell detailCell = new XRTableCell();
+            xrTableRow1.Cells.Add(detailCell);
+            detailCell.WidthF = 10;
+
+            detailCell.DataBindings.Add("Text", null, "hola");
+            detailCell.Borders = DevExpress.XtraPrinting.BorderSide.All;
+
+            xrTableRow1.Name = "xrTableRow1";
+            xrTableRow1.Weight = 1D;
+
+            xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
+            xrTableRow1});
+
+            xrTable1.SizeF = new System.Drawing.SizeF(720.8332F, 14.99999F);
+            xrTable1.StylePriority.UseBorders = false;
+            xrTable1.StylePriority.UseFont = false;
+
+            xrTable1.EndInit();
+            */
+        }
+    }
+}
